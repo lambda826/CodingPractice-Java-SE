@@ -40,7 +40,7 @@ class Coords<T extends TwoD> {
     }
 }
 
-public class BoundedWildcard {
+public class WildcardBounded {
     static void showXY(Coords<?> c) {
         System.out.println("X Y Coordinates:");
         for (int i = 0; i < c.coords.length; i++)
