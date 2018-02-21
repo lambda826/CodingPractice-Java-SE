@@ -5,6 +5,8 @@
 
 package enumerations;
 
+import enumerations._01_enums.Apple;
+
 public class EnumDemo {
 
     public static void main(String[] args) {

@@ -5,7 +5,7 @@
 
 package exceptions;
 
-import static others.Print.print;
+import static util.Print.print;
 
 /*
 
@@ -33,14 +33,14 @@ public class MultipleReturns {
             print("Performing cleanup");
         }
     }
-    
+
     public static int g() {
         try {
             return 1;
         } finally {
             print("111");
         }
-        
+
     }
 
     public static void main(String[] args) {

@@ -5,7 +5,6 @@
 
 package exceptions;
 
-
 public class _102_Exc1 {
     static void subroutine() {
         int d = 0;

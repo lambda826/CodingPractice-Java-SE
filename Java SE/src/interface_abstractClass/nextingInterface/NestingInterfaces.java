@@ -6,7 +6,7 @@
 package interface_abstractClass.nextingInterface;
 
 public class NestingInterfaces {
-    
+
     public class BImp implements A.B {
         public void f() {
         }
@@ -21,7 +21,7 @@ public class NestingInterfaces {
     //! class DImp implements A.D {
     //! public void f() {}
     //! }
-    
+
     class EImp implements E {
         public void g() {
         }

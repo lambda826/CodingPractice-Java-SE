@@ -6,9 +6,9 @@
 package inheritance_Interface.ocp;
 
 public class StaticMethodCannotBeOverriden extends SuperClazz {
-//    public void print() {
-//        System.out.println("cannot override");
-//    }
+    //    public void print() {
+    //        System.out.println("cannot override");
+    //    }
 }
 
 class SuperClazz {

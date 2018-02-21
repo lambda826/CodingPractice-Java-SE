@@ -66,5 +66,3 @@ public class _107_LambdasAsArgumentsDemo {
         System.out.println("The string reversed: " + stringOp(reverse, inStr));
     }
 }
-
-

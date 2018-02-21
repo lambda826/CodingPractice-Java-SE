@@ -5,6 +5,8 @@
 
 package enumerations;
 
+import enumerations._01_enums.Apple;
+
 public class ValuesAndValueOfDemo {
 
     public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class ValuesAndValueOfDemo {
 
         ap = Apple.valueOf("Winesap");
         System.out.println(ap);
-        
+
         // java.lang.IllegalArgumentException: No enum constant enumerations.Apple._Winesap
         ap = Apple.valueOf("_Winesap");
         System.out.println(ap);

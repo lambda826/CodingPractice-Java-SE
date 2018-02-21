@@ -6,7 +6,7 @@
 package inheritance_Interface.ocp;
 
 public class Violin extends StringInstrument implements MusicCreator {
-    
+
     // has to be compatible with StringInstrument#play()
     public Long play() {
         return 12L;

@@ -24,7 +24,7 @@ public class _906_Computer {
     // Since Exception is not a subclass of NullPointerException, the checked Exception is not properly handled or declared and the code does not compile,
 
     //    public static void main(String[] bits) {
-    
+
     public static void main(String[] bits) throws Exception {
         try {
             new _906_Computer().compute();

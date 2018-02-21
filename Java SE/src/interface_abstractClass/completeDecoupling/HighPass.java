@@ -21,4 +21,4 @@ public class HighPass extends Filter {
     public Waveform process(Waveform input) {
         return input;
     }
-} 
+}

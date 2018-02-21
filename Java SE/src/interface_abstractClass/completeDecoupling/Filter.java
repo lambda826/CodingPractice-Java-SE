@@ -14,7 +14,7 @@ you can’t use a Filter with the Apply.process( ) method, even though it would 
  */
 
 public class Filter {
-    
+
     public String name() {
         return getClass().getSimpleName();
     }

@@ -21,4 +21,4 @@ public class LowPass extends Filter {
     public Waveform process(Waveform input) {
         return input; // Dummy processing
     }
-} 
+}

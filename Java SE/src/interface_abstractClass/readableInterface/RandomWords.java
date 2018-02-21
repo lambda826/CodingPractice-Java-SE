@@ -10,7 +10,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RandomWords implements Readable {
-    
+
     private static Random rand = new Random(47);
     private static final char[] capitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
     private static final char[] lowers = "abcdefghijklmnopqrstuvwxyz".toCharArray();
