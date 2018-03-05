@@ -2,6 +2,8 @@
 // Simple generator implementations.
 package util;
 
+import generics._02_GenericInterfaces.Generator;
+
 public class CountingGenerator {
     public static class Boolean implements Generator<java.lang.Boolean> {
         private boolean value = false;

@@ -10,7 +10,7 @@ public class RandomTest {
             System.out.print(RandomGenerator.random(Activity.class) + " ");
 
         System.out.println();
-        
+
         for (int i = 0; i < 20; i++) {
             System.out.print(RandomGenerator.random(Activity.values()) + " ");
         }

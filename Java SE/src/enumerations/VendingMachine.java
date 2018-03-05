@@ -3,6 +3,8 @@
 package enumerations;
 
 import java.util.*;
+
+import generics._02_GenericInterfaces.Generator;
 import util.*;
 import static enumerations.Input.*;
 import static util.Print.*;

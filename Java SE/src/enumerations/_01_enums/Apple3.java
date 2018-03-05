@@ -5,11 +5,10 @@
 
 package enumerations._01_enums;
 
-
 public enum Apple3 {
     Jonathan(10), GoldenDel(9), RedDel, Winesap(15), Cortland(8);
 
-    private int price; 
+    private int price;
 
     // Constructor 
     Apple3(int p) {

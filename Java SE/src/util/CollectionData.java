@@ -4,6 +4,8 @@ package util;
 
 import java.util.*;
 
+import generics._02_GenericInterfaces.Generator;
+
 public class CollectionData<T> extends ArrayList<T> {
     public CollectionData(Generator<T> gen, int quantity) {
         for (int i = 0; i < quantity; i++)

@@ -3,6 +3,8 @@ package util;
 
 import java.util.*;
 
+import generics._02_GenericInterfaces.Generator;
+
 public class Generated {
     // Fill an existing array:
     public static <T> T[] array(T[] a, Generator<T> gen) {

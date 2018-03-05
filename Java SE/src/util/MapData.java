@@ -4,6 +4,8 @@ package util;
 
 import java.util.*;
 
+import generics._02_GenericInterfaces.Generator;
+
 public class MapData<K, V> extends LinkedHashMap<K, V> {
     // A single Pair Generator:
     public MapData(Generator<Pair<K, V>> gen, int quantity) {

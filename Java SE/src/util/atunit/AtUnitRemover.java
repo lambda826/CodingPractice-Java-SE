@@ -45,7 +45,7 @@ public class AtUnitRemover implements ProcessFiles.Strategy {
                 if (attr == null)
                     continue;
                 for (Annotation ann : attr.getAnnotations()) {
-                    if (ann.getTypeName().startsWith("net.mindview.atunit")) {
+                    if (ann.getTypeName().startsWith("atunit")) {
                         print(ctClass.getName() + " Method: " + mi.getName() + " " + ann);
                         if (remove) {
                             ctClass.removeMethod(method);

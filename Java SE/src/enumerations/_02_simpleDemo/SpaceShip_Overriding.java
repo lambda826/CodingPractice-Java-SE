@@ -2,7 +2,7 @@ package enumerations._02_simpleDemo;
 
 public enum SpaceShip_Overriding {
     SCOUT, CARGO, TRANSPORT, CRUISER, BATTLESHIP, MOTHERSHIP;
-    
+
     @Override
     public String toString() {
         String id = name();

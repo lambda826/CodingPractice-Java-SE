@@ -2,7 +2,7 @@ package enumerations._04_useEnum;
 
 import java.util.Random;
 
-import util.Generator;
+import generics._02_GenericInterfaces.Generator;
 
 enum CartoonCharacter implements Generator<CartoonCharacter> {
     SLAPPY, SPANKY, PUNCHY, SILLY, BOUNCY, NUTTY, BOB;

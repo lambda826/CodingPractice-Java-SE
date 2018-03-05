@@ -4,6 +4,6 @@ package util.simple;
 
 public class List {
     public List() {
-        System.out.println("net.mindview.simple.List");
+        System.out.println("simple.List");
     }
 } ///:~

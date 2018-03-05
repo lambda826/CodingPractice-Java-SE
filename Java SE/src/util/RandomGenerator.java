@@ -4,6 +4,8 @@ package util;
 
 import java.util.*;
 
+import generics._02_GenericInterfaces.Generator;
+
 public class RandomGenerator {
     private static Random r = new Random(47);
 
