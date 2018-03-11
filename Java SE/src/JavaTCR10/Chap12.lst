@@ -479,7 +479,7 @@ class Meta2 {
       System.out.println(); 
  
       // Display all annotations for myMeth. 
-      Method m = ob.getClass( ).getMethod("myMeth"); 
+      Method m = ob.getClass().getMethod("myMeth"); 
       annos = m.getAnnotations();  
  
       System.out.println("All annotations for myMeth:"); 
@@ -545,7 +545,7 @@ import java.lang.reflect.*;
 class Marker { 
  
   // Annotate a method using a marker. 
-  // Notice that no ( ) is needed. 
+  // Notice that no () is needed. 
   @MyMarker 
   public static void myMeth() { 
     Marker ob = new Marker(); 

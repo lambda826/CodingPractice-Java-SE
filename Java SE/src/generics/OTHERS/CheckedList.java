@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Using Collection.checkedList().
-import typeinfo.pets.Dog;
-import typeinfo.pets.Pet;
+import common.typeInfo.pet.Dog;
+import common.typeInfo.pet.Pet;
 
 public class CheckedList {
     @SuppressWarnings("unchecked")

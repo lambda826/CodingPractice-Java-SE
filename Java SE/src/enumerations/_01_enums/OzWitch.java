@@ -1,7 +1,6 @@
 package enumerations._01_enums;
 
-// The witches in the land of Oz.
-import static util.Print.*;
+import static common.utils.Print.*;
 
 public enum OzWitch {
     // Instances must be defined first, before methods:

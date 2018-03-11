@@ -1,7 +1,6 @@
 package enumerations._04_useEnum;
 
-// Enums in switch statements.
-import static util.Print.print;
+import static common.utils.Print.print;
 
 // Define an enum type:
 enum Signal {

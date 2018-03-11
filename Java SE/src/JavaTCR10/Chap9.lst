@@ -565,7 +565,7 @@ class DefaultMethodDemo {
 
 listing 27
 class MyIFImp2 implements MyIF { 
-  // Here, implementations for both getNumber( ) and getString( ) are provided. 
+  // Here, implementations for both getNumber() and getString() are provided. 
   public int getNumber() { 
     return 100; 
   } 
@@ -580,7 +580,7 @@ interface IntStack {
   void push(int item); // store an item 
   int pop(); // retrieve an item 
  
-  // Because clear( ) has a default, it need not be 
+  // Because clear() has a default, it need not be 
   // implemented by a preexisting class that uses IntStack. 
   default void clear() { 
     System.out.println("clear() not implemented."); 

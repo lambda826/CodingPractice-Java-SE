@@ -31,7 +31,7 @@ public class GenericArray2<T> {
             System.out.print(gai.get(i) + " ");
         System.out.println();
         try {
-            //  if you call rep( ), it again attempts to cast the Object[] to a T[], which is still incorrect, 
+            //  if you call rep(), it again attempts to cast the Object[] to a T[], which is still incorrect, 
             Integer[] ia = gai.rep();
         } catch (Exception e) {
             System.out.println(e);

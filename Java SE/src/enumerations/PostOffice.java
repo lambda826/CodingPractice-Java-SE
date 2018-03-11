@@ -1,6 +1,6 @@
 package enumerations;
 
-import static util.Print.*;
+import static common.utils.Print.*;
 
 // Modeling a post office.
 import java.util.Iterator;

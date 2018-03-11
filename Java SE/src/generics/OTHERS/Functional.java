@@ -1,9 +1,10 @@
 package generics.OTHERS;
 
+import static common.utils.Print.*;
+
 import java.math.*;
 import java.util.concurrent.atomic.*;
 import java.util.*;
-import static util.Print.*;
 
 // Different types of function objects:
 interface Combiner<T> {

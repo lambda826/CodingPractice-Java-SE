@@ -9,7 +9,7 @@ class StreamDemo {
   public static void main(String[] args) { 
  
     // Create a list of Integer values. 
-    ArrayList<Integer> myList = new ArrayList<>( ); 
+    ArrayList<Integer> myList = new ArrayList<>(); 
     myList.add(7); 
     myList.add(18); 
     myList.add(10); 
@@ -71,7 +71,7 @@ class StreamDemo2 {
   public static void main(String[] args) { 
  
     // Create a list of Integer values. 
-    ArrayList<Integer> myList = new ArrayList<>( ); 
+    ArrayList<Integer> myList = new ArrayList<>(); 
  
     myList.add(7); 
     myList.add(18); 
@@ -102,7 +102,7 @@ class StreamDemo3 {
   public static void main(String[] args) { 
  
     // This is now a list of double values. 
-    ArrayList<Double> myList = new ArrayList<>( ); 
+    ArrayList<Double> myList = new ArrayList<>(); 
  
     myList.add(7.0); 
     myList.add(18.0); 
@@ -132,7 +132,7 @@ class StreamDemo4 {
   public static void main(String[] args) { 
  
     // A list of double values. 
-    ArrayList<Double> myList = new ArrayList<>( ); 
+    ArrayList<Double> myList = new ArrayList<>(); 
  
     myList.add(7.0); 
     myList.add(18.0); 
@@ -185,7 +185,7 @@ class StreamDemo5 {
   public static void main(String[] args) { 
  
     // A list of names, phone numbers, and e-mail addresses. 
-    ArrayList<NamePhoneEmail> myList = new ArrayList<>( ); 
+    ArrayList<NamePhoneEmail> myList = new ArrayList<>(); 
  
     myList.add(new NamePhoneEmail("Larry", "555-5555", 
                                   "Larry@HerbSchildt.com")); 
@@ -223,7 +223,7 @@ class StreamDemo6 {
   public static void main(String[] args) { 
  
     // A list of double values. 
-    ArrayList<Double> myList = new ArrayList<>( ); 
+    ArrayList<Double> myList = new ArrayList<>(); 
  
     myList.add(1.1); 
     myList.add(3.6); 
@@ -282,7 +282,7 @@ class StreamDemo7 {
   public static void main(String[] args) { 
  
     // A list of names, phone numbers, and e-mail addresses. 
-    ArrayList<NamePhoneEmail> myList = new ArrayList<>( ); 
+    ArrayList<NamePhoneEmail> myList = new ArrayList<>(); 
  
     myList.add(new NamePhoneEmail("Larry", "555-5555", 
                                   "Larry@HerbSchildt.com")); 
@@ -328,7 +328,7 @@ class StreamDemo8 {
   public static void main(String[] args) { 
  
     // Create a list of Strings. 
-    ArrayList<String> myList = new ArrayList<>( ); 
+    ArrayList<String> myList = new ArrayList<>(); 
     myList.add("Alpha"); 
     myList.add("Beta"); 
     myList.add("Gamma"); 
@@ -359,7 +359,7 @@ class StreamDemo9 {
   public static void main(String[] args) { 
  
     // Create a list of Strings. 
-    ArrayList<String> myList = new ArrayList<>( ); 
+    ArrayList<String> myList = new ArrayList<>(); 
     myList.add("Alpha"); 
     myList.add("Beta"); 
     myList.add("Gamma"); 
@@ -389,7 +389,7 @@ class StreamDemo10 {
   public static void main(String[] args) { 
  
     // Create a list of Strings. 
-    ArrayList<String> myList = new ArrayList<>( ); 
+    ArrayList<String> myList = new ArrayList<>(); 
     myList.add("Alpha"); 
     myList.add("Beta"); 
     myList.add("Gamma"); 

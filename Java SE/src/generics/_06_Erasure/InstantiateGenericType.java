@@ -1,6 +1,6 @@
 package generics._06_Erasure;
 
-import static util.Print.*;
+import static common.utils.Print.*;
 
 class ClassAsFactory<T> {
     T x;

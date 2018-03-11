@@ -2,7 +2,10 @@ package generics.OTHERS;
 
 // No latent typing in Java
 import typeinfo.pets.*;
-import static util.Print.*;
+
+import static common.utils.Print.*;
+
+import common.typeInfo.pet.Dog;
 
 class PerformingDog extends Dog implements Performs {
     public void speak() {

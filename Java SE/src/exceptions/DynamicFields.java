@@ -5,14 +5,14 @@
 
 package exceptions;
 
-import static util.Print.print;
+import static common.utils.Print.print;
 
 /*
 
 Often you want to catch one exception and throw another, but still keep the information about the originating exception—this is called exception chaining
 All Throwable subclasses have the option to take a cause object in their constructor.
 The cause is intended to be the originating exception, and by passing it in you maintain the stack trace back to its origin, even though you’re creating and throwing a new exception
-If you want to chain any other exception types, you do it through the initCause( ) method rather than the constructor.
+If you want to chain any other exception types, you do it through the initCause() method rather than the constructor.
 
  */
 

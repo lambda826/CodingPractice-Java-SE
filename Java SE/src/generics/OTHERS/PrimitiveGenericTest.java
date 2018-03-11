@@ -1,5 +1,6 @@
 package generics.OTHERS;
 
+import common.utils.RandomGenerator;
 import util.*;
 
 // Fill an array using a generator:

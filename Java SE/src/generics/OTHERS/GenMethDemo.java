@@ -8,7 +8,7 @@ package generics.OTHERS;
 public class GenMethDemo {
 
     // A class that implements Comparable defines objects that can be ordered. 
-    // Thus, requiring an upper bound of Comparable ensures that isIn( ) can be used only with objects that are capable of being compared.
+    // Thus, requiring an upper bound of Comparable ensures that isIn() can be used only with objects that are capable of being compared.
     static <T extends Comparable<T>, V extends T> boolean isIn(T x, V[] y) {
         for (int i = 0; i < y.length; i++)
             if (x.equals(y[i]))

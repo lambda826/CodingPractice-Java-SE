@@ -206,7 +206,7 @@ class LambdasAsArgumentsDemo {
     System.out.println("Here is input string: " + inStr); 
  
     // Here, a simple expression lambda that uppercases a string 
-    // is passed to stringOp( ). 
+    // is passed to stringOp(). 
     outStr = stringOp((str) -> str.toUpperCase(), inStr); 
     System.out.println("The string in uppercase: " + outStr); 
  
@@ -395,7 +395,7 @@ class MethodRefDemo2 {
     String outStr; 
  
     // Create a MyStringOps object. 
-    MyStringOps strOps = new MyStringOps( ); 
+    MyStringOps strOps = new MyStringOps(); 
  
     // Now, a method reference to the instance method strReverse 
     // is passed to stringOp(). 
@@ -608,7 +608,7 @@ class ConstructorRefDemo {
     MyClass mc = myClassCons.func(100); 
  
     // Use the instance of MyClass just created. 
-    System.out.println("val in mc is " + mc.getVal( )); 
+    System.out.println("val in mc is " + mc.getVal()); 
   } 
 }
 
@@ -627,7 +627,7 @@ class MyClass<T> {
   MyClass(T v) { val = v; } 
  
   // This is the default constructor. 
-  MyClass( ) { val = null;  } 
+  MyClass() { val = null;  } 
  
   // ... 
  
@@ -645,7 +645,7 @@ class ConstructorRefDemo2 {
     MyClass<Integer> mc = myClassCons.func(100); 
  
     // Use the instance of MyClass<T> just created. 
-    System.out.println("val in mc is " + mc.getVal( )); 
+    System.out.println("val in mc is " + mc.getVal()); 
   } 
 }
 
@@ -707,7 +707,7 @@ class ConstructorRefDemo3 {
     MyClass<Double> mc = myClassFactory(myClassCons, 100.1); 
  
     // Use the instance of MyClass just created. 
-    System.out.println("val in mc is " + mc.getVal( )); 
+    System.out.println("val in mc is " + mc.getVal()); 
  
     // Now, create a different class by use of myClassFactory(). 
     MyFunc<MyClass2, String> myClassCons2 = MyClass2::new; 
@@ -716,7 +716,7 @@ class ConstructorRefDemo3 {
     MyClass2 mc2 = myClassFactory(myClassCons2, "Lambda"); 
  
     // Use the instance of MyClass just created. 
-    System.out.println("str in mc2 is " + mc2.getVal( )); 
+    System.out.println("str in mc2 is " + mc2.getVal()); 
   } 
 }
 

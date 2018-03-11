@@ -1,9 +1,10 @@
 package generics.OTHERS;
 
+import static common.utils.Print.*;
+
 // {main: ApplyTest}
 import java.lang.reflect.*;
 import java.util.*;
-import static util.Print.*;
 
 public class Apply {
     public static <T, S extends Iterable<? extends T>> void apply(S seq, Method f, Object... args) {

@@ -8,7 +8,7 @@ package exceptions;
 /*
 
 The construction of the InputFile object is effectively in its
-own try block. If that construction fails, the outer catch clause is entered and dispose( ) is
+own try block. If that construction fails, the outer catch clause is entered and dispose() is
 not called. However, if construction succeeds then you want to make sure the object is
 cleaned up, so immediately after construction you create a new try block. The finally that
 performs cleanup is associated with the inner try block; this way, the finally clause is not

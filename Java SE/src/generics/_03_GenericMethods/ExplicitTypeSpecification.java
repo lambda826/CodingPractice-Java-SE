@@ -3,8 +3,8 @@ package generics._03_GenericMethods;
 import java.util.List;
 import java.util.Map;
 
-import typeinfo.pets.Person;
-import typeinfo.pets.Pet;
+import common.typeInfo.pet.Person;
+import common.typeInfo.pet.Pet;
 
 public class ExplicitTypeSpecification {
     static void f(Map<Person, List<Pet>> petPeople) {

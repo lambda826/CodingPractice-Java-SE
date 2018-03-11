@@ -1,11 +1,11 @@
 package generics._03_GenericMethods.SetsUtility;
 
+import static common.utils.Print.print;
 import static generics._03_GenericMethods.SetsUtility.Sets.complement;
 import static generics._03_GenericMethods.SetsUtility.Sets.difference;
 import static generics._03_GenericMethods.SetsUtility.Sets.intersection;
 import static generics._03_GenericMethods.SetsUtility.Sets.union;
 import static generics._03_GenericMethods.SetsUtility.Watercolors.*;
-import static util.Print.print;
 
 import java.util.EnumSet;
 import java.util.Set;

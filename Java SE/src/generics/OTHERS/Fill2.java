@@ -6,9 +6,11 @@ import generics._02_GenericInterfaces.coffee.Mocha;
 // Using adapters to simulate latent typing.
 // {main: Fill2Test}
 import generics.coffee.*;
+
+import static common.utils.Print.*;
+
 import java.util.*;
 import util.*;
-import static util.Print.*;
 
 interface Addable<T> {
     void add(T t);

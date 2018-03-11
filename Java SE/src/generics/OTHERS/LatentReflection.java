@@ -1,8 +1,9 @@
 package generics.OTHERS;
 
+import static common.utils.Print.*;
+
 // Using Reflection to produce latent typing.
 import java.lang.reflect.*;
-import static util.Print.*;
 
 // Does not implement Performs:
 class Mime {

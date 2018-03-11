@@ -4,10 +4,12 @@ package enumerations;
 
 import java.util.*;
 
+import common.utils.TextFile;
 import generics._02_GenericInterfaces.Generator;
 import util.*;
+
+import static common.utils.Print.*;
 import static enumerations.Input.*;
-import static util.Print.*;
 
 enum Category {
     MONEY(NICKEL, DIME, QUARTER, DOLLAR), ITEM_SELECTION(TOOTHPASTE, CHIPS, SODA, SOAP), QUIT_TRANSACTION(ABORT_TRANSACTION), SHUT_DOWN(STOP);

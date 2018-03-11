@@ -1,6 +1,6 @@
 package enumerations;
 
-import static util.Print.print;
+import static common.utils.Print.print;
 
 import java.util.*;
 

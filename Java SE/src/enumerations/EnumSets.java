@@ -2,8 +2,8 @@
 // Operations on EnumSets
 package enumerations;
 
+import static common.utils.Print.*;
 import static enumerations.AlarmPoints.*;
-import static util.Print.*;
 
 import java.util.EnumSet;
 

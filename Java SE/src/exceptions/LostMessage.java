@@ -13,7 +13,7 @@ This happens with a particular configuration using a finally
 You can see from the output that there’s no evidence of the VerylmportantException, which is simply replaced by the HoHumException in the finally clause. 
 This is a rather serious pitfall, since it means that an exception can be completely lost, and in a far more subtle and difficult-to-detect fashion than the preceding example. 
 In contrast, C++ treats the situation in which a second exception is thrown before the first one is handled as a dire programming error. 
-Perhaps a future version of Java will repair this problem (on the other hand, you will typically wrap any method that throws an exception, such as dispose( ) in the example above, inside a try-catch clause).
+Perhaps a future version of Java will repair this problem (on the other hand, you will typically wrap any method that throws an exception, such as dispose() in the example above, inside a try-catch clause).
 
  */
 

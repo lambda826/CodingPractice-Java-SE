@@ -29,7 +29,7 @@ public class _107_LambdasAsArgumentsDemo {
         System.out.println("Here is input string: " + inStr);
 
         // Here, a simple expression lambda that uppercases a string 
-        // is passed to stringOp( ). 
+        // is passed to stringOp(). 
         outStr = stringOp((str) -> str.toUpperCase(), inStr);
         System.out.println("The string in uppercase: " + outStr);
 

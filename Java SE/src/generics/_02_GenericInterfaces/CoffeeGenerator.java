@@ -11,7 +11,7 @@ import generics._02_GenericInterfaces.coffee.Latte;
 import generics._02_GenericInterfaces.coffee.Mocha;
 
 /*
- * The parameterized Generator interface ensures that next( ) returns the parameter type
+ * The parameterized Generator interface ensures that next() returns the parameter type
  * CoffeeGenerator also implements the Iterable interface, so it can be used in a foreach statement
  */
 public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {

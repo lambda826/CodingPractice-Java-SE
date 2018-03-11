@@ -13,7 +13,7 @@ class Gen22 extends _101_Gen<String> {
     }
 
     // A String-specific override of getob()
-    // Notice that the only difference between the two getob( ) methods is their return type
+    // Notice that the only difference between the two getob() methods is their return type
     // Normally, this would cause an error
     // But because this does not occur in your source code, it does not cause a problem and is handled correctly by the JVM.
     public String getob() {

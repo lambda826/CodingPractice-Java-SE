@@ -19,7 +19,7 @@ class Particle<POSITION, MOMENTUM> {
 }
 
 /*
- * According to the JDK documentation, Class.getTypeParameters( ) "returns an array of TypeVariable objects that represent the type variables declared by the generic declaration..." 
+ * According to the JDK documentation, Class.getTypeParameters() "returns an array of TypeVariable objects that represent the type variables declared by the generic declaration..." 
  * This seems to suggest that you might be able to find out what the parameter types are. 
  * However, as you can see from the output, all you find out is the identifiers that are used as the parameter placeholders, which is not such an interesting piece of information.
  * The cold truth is: There’s no information about generic parameter types available inside generic code

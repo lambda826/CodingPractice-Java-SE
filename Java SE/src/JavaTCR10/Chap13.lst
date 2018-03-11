@@ -492,7 +492,7 @@ class MyClass {
   } 
  
   // give a and b default values of 0 
-  MyClass( ) { 
+  MyClass() { 
     a = 0; 
     b = 0; 
   } 
@@ -515,7 +515,7 @@ class MyClass {
   } 
  
   // give a and b default values of 0 
-  MyClass( ) { 
+  MyClass() { 
     this(0); // invokes MyClass(0) 
   } 
 }

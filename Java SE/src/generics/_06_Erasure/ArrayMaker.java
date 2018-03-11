@@ -12,7 +12,7 @@ public class ArrayMaker<T> {
 
     @SuppressWarnings("unchecked")
     T[] create(int size) {
-        // Array.newInstance( ) is the recommended approach for creating arrays in generics.
+        // Array.newInstance() is the recommended approach for creating arrays in generics.
         return (T[]) Array.newInstance(kind, size);
     }
 
