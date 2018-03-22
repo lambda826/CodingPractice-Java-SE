@@ -5,16 +5,14 @@
 
 package lambda;
 
-/*
-
-
-
- */
+interface SomeFunc<T> {
+    T func(T t);
+}
 
 public class _106_GenericFunctionalInterfaceDemo {
     public static void main(String args[]) {
 
-        // Use a String-based version of SomeFunc. 
+        // Use a String-based version of SomeFunc
         SomeFunc<String> reverse = (str) -> {
             String result = "";
             int i;
@@ -28,7 +26,7 @@ public class _106_GenericFunctionalInterfaceDemo {
         System.out.println("Lambda reversed is " + reverse.func("Lambda"));
         System.out.println("Expression reversed is " + reverse.func("Expression"));
 
-        // Now, use an Integer-based version of SomeFunc. 
+        // Now, use an Integer-based version of SomeFunc
         SomeFunc<Integer> factorial = (n) -> {
             int result = 1;
 
@@ -41,8 +39,4 @@ public class _106_GenericFunctionalInterfaceDemo {
         System.out.println("The factoral of 3 is " + factorial.func(3));
         System.out.println("The factoral of 5 is " + factorial.func(5));
     }
-}
-
-interface SomeFunc<T> {
-    T func(T t);
 }

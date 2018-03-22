@@ -5,16 +5,14 @@
 
 package lambda;
 
-/*
-
-
-
- */
+interface NumericFunc {
+    int func(int n);
+}
 
 class _104_BlockLambdaDemo {
     public static void main(String args[]) {
 
-        // This block lambda computes the factorial of an int value. 
+        // This block lambda computes the factorial of an int value
         NumericFunc factorial = (n) -> {
             int result = 1;
 
@@ -27,8 +25,4 @@ class _104_BlockLambdaDemo {
         System.out.println("The factoral of 3 is " + factorial.func(3));
         System.out.println("The factoral of 5 is " + factorial.func(5));
     }
-}
-
-interface NumericFunc {
-    int func(int n);
 }

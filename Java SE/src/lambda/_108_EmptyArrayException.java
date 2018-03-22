@@ -5,17 +5,21 @@
 
 package lambda;
 
-/*
+interface DoubleNumericArrayFunc {
+    double func(double[] n) throws EmptyArrayException;
+}
 
-
-
- */
+class EmptyArrayException extends Exception {
+    EmptyArrayException() {
+        super("Array Empty");
+    }
+}
 
 public class _108_EmptyArrayException {
     public static void main(String args[]) throws EmptyArrayException {
         double[] values = { 1.0, 2.0, 3.0, 4.0 };
 
-        // This block lambda computes the average of an array of doubles. 
+        // This block lambda computes the average of an array of doubles
         DoubleNumericArrayFunc average = (n) -> {
             double sum = 0;
 
@@ -30,17 +34,7 @@ public class _108_EmptyArrayException {
 
         System.out.println("The average is " + average.func(values));
 
-        // This causes an exception to be thrown. 
+        // This causes an exception to be thrown
         System.out.println("The average is " + average.func(new double[0]));
-    }
-}
-
-interface DoubleNumericArrayFunc {
-    double func(double[] n) throws EmptyArrayException;
-}
-
-class EmptyArrayException extends Exception {
-    EmptyArrayException() {
-        super("Array Empty");
     }
 }

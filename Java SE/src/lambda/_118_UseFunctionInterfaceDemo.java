@@ -7,17 +7,11 @@ package lambda;
 
 import java.util.function.Function;
 
-/*
-
-
-
- */
-
 public class _118_UseFunctionInterfaceDemo {
     public static void main(String args[]) {
 
-        // This block lambda computes the factorial of an int value. 
-        // This time, Function is the functional interface. 
+        // This block lambda computes the factorial of an int value
+        // This time, Function is the functional interface
         Function<Integer, Integer> factorial = (n) -> {
             int result = 1;
             for (int i = 1; i <= n; i++)

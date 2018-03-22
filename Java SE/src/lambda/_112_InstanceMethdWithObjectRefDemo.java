@@ -5,16 +5,13 @@
 
 package lambda;
 
-/*
-
-
-
- */
 interface MyFunc2<T> {
+    // The first parameter of the functional interface matches the invoking object 
+    // The second parameter matches the parameter specified by the method
     boolean func(T v1, T v2);
 }
 
-// A class that stores the temperature high for a day. 
+// A class that stores the temperature high for a day
 class HighTemp {
     private int hTemp;
 
@@ -22,24 +19,20 @@ class HighTemp {
         hTemp = ht;
     }
 
-    // Return true if the invoking HighTemp object has the same 
-    // temperature as ht2. 
+    // Return true if the invoking HighTemp object has the same temperature as ht2
     boolean sameTemp(HighTemp ht2) {
         return hTemp == ht2.hTemp;
     }
 
-    // Return true if the invoking HighTemp object has a temperature 
-    // that is less than ht2. 
+    // Return true if the invoking HighTemp object has a temperature that is less than ht2
     boolean lessThanTemp(HighTemp ht2) {
         return hTemp < ht2.hTemp;
     }
 }
 
-class _112_InstanceMethWithObjectRefDemo {
+class _112_InstanceMethdWithObjectRefDemo {
 
-    // A method that returns the number of occurences 
-    // of an object for which some criteria, as specified by 
-    // the MyFunc2 parameter, is true. 
+    // A method that returns the number of occurences of an object for which some criteria, as specified by the MyFunc2 parameter, is true
     static <T> int counter(T[] vals, MyFunc2<T> f, T v) {
         int count = 0;
 
@@ -53,23 +46,21 @@ class _112_InstanceMethWithObjectRefDemo {
     public static void main(String args[]) {
         int count;
 
-        // Create an array of HighTemp objects. 
+        // Create an array of HighTemp objects
         HighTemp[] weekDayHighs = { new HighTemp(89), new HighTemp(82), new HighTemp(90), new HighTemp(89), new HighTemp(89), new HighTemp(91), new HighTemp(84), new HighTemp(83) };
 
-        // Use counter() with arrays of the class HighTemp. 
-        // Notice that a reference to the instance method 
-        // sameTemp() is passed as the second argument. 
+        // Use counter() with arrays of the class HighTemp
+        // Notice that a reference to the instance method sameTemp() is passed as the second argument
         count = counter(weekDayHighs, HighTemp::sameTemp, new HighTemp(89));
         System.out.println(count + " days had a high of 89");
 
-        // Now, create and use another array of HighTemp objects. 
+        // Now, create and use another array of HighTemp objects
         HighTemp[] weekDayHighs2 = { new HighTemp(32), new HighTemp(12), new HighTemp(24), new HighTemp(19), new HighTemp(18), new HighTemp(12), new HighTemp(-1), new HighTemp(13) };
 
         count = counter(weekDayHighs2, HighTemp::sameTemp, new HighTemp(12));
         System.out.println(count + " days had a high of 12");
 
-        // Now, use lessThanTemp() to find days when temperature was less 
-        // that a specified value. 
+        // Now, use lessThanTemp() to find days when temperature was less that a specified value
         count = counter(weekDayHighs, HighTemp::lessThanTemp, new HighTemp(89));
         System.out.println(count + " days had a high less than 89");
 

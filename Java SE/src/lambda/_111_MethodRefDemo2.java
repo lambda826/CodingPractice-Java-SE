@@ -5,13 +5,8 @@
 
 package lambda;
 
-/*
-
-
-
- */
-
-class MyStringOps {
+class MyStringOps2 {
+    // A non-static method that reverses a string
     String strReverse(String str) {
         String result = "";
         int i;
@@ -23,11 +18,10 @@ class MyStringOps {
     }
 }
 
-class _111_MethodRefDemo2 {
+public class _111_MethodRefDemo2 {
 
-    // This method has a functional interface as the type of 
-    // its first parameter. Thus, it can be passed any instance 
-    // of that interface, including method references. 
+    // This method has a functional interface as the type of its first parameter
+    // Thus, it can be passed any instance of that interface, including method references
     static String stringOp(StringFunc sf, String s) {
         return sf.func(s);
     }
@@ -36,11 +30,10 @@ class _111_MethodRefDemo2 {
         String inStr = "Lambdas add power to Java";
         String outStr;
 
-        // Create a MyStringOps object. 
-        MyStringOps strOps = new MyStringOps();
+        // Create a MyStringOps2 object
+        MyStringOps2 strOps = new MyStringOps2();
 
-        // Now, a method reference to the instance method strReverse 
-        // is passed to stringOp(). 
+        // Now, a method reference to the instance method strReverse is passed to stringOp() 
         outStr = stringOp(strOps::strReverse, inStr);
 
         System.out.println("Original string: " + inStr);

@@ -5,16 +5,14 @@
 
 package lambda;
 
-/*
-
-
-
- */
+interface StringFunc {
+    String func(String n);
+}
 
 public class _105_BlockLambdaDemo2 {
     public static void main(String args[]) {
 
-        // This block lambda that reverses the charactrers in a string. 
+        // This block lambda that reverses the charactrers in a string
         StringFunc reverse = (str) -> {
             String result = "";
             int i;
@@ -28,8 +26,4 @@ public class _105_BlockLambdaDemo2 {
         System.out.println("Lambda reversed is " + reverse.func("Lambda"));
         System.out.println("Expression reversed is " + reverse.func("Expression"));
     }
-}
-
-interface StringFunc {
-    String func(String n);
 }

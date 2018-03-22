@@ -5,14 +5,13 @@
 
 package lambda;
 
-/*
+interface NumericTest {
+    boolean test(int n);
+}
 
-
-
- */
 public class _102_LambdaDemo2 {
     public static void main(String args[]) {
-        // A lambda expression that tests if a number is even. 
+        // A lambda expression that tests if a number is even
         NumericTest isEven = (n) -> (n % 2) == 0;
 
         if (isEven.test(10))
@@ -20,8 +19,7 @@ public class _102_LambdaDemo2 {
         if (!isEven.test(9))
             System.out.println("9 is not even");
 
-        // Now, use a lambda expression that tests if a number 
-        // is non-negative. 
+        // Now, use a lambda expression that tests if a number is non-negative
         NumericTest isNonNeg = (n) -> n >= 0;
 
         if (isNonNeg.test(1))
@@ -29,8 +27,4 @@ public class _102_LambdaDemo2 {
         if (!isNonNeg.test(-1))
             System.out.println("-1 is negative");
     }
-}
-
-interface NumericTest {
-    boolean test(int n);
 }
