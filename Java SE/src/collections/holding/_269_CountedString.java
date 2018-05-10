@@ -43,7 +43,7 @@ public class _269_CountedString {
         _269_CountedString[] cs = new _269_CountedString[5];
         for (int i = 0; i < cs.length; i++) {
             cs[i] = new _269_CountedString("hi");
-            map.put(cs[i], i); 
+            map.put(cs[i], i);
         }
         print(map);
         for (_269_CountedString cstring : cs) {

@@ -50,9 +50,9 @@ public class _285_CanonicalMapping {
             Key k = new Key(Integer.toString(i));
             Value v = new Value(Integer.toString(i));
             if (i % 3 == 0)
-                keys[i] = k; 
+                keys[i] = k;
             map.put(k, v);
         }
         System.gc();
     }
-} 
+}

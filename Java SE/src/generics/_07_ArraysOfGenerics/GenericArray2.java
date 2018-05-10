@@ -1,7 +1,7 @@
 package generics._07_ArraysOfGenerics;
 
 public class GenericArray2<T> {
-    
+
     // The internal representation is now Object[] rather than T[]
     private Object[] array;
 

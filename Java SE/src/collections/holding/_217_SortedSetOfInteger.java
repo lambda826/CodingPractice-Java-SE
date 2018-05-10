@@ -10,4 +10,4 @@ public class _217_SortedSetOfInteger {
             intset.add(rand.nextInt(30));
         System.out.println(intset);
     }
-} 
+}

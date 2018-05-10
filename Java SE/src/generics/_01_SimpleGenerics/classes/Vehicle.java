@@ -5,8 +5,6 @@
 
 package generics._01_SimpleGenerics.classes;
 
-
-
 public class Vehicle {
 
 }

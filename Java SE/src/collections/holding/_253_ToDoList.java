@@ -3,7 +3,7 @@ package collections.holding;
 import java.util.*;
 
 public class _253_ToDoList extends PriorityQueue<_253_ToDoList.ToDoItem> {
-    
+
     static class ToDoItem implements Comparable<ToDoItem> {
         private char primary;
         private int secondary;

@@ -78,6 +78,9 @@ public class _998_FunctionalInterfaces {
             }
         };
 
+        List<String> str = Arrays.asList("a", "b", "A", "B");
+        str.sort(String::compareToIgnoreCase);
+
     }
 
 }

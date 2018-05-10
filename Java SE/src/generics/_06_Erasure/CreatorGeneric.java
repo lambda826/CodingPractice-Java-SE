@@ -1,6 +1,5 @@
 package generics._06_Erasure;
 
-
 /*
  * Template Method design pattern
  */

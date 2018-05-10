@@ -10,7 +10,7 @@ import common.typeInfo.pet.Pet;
 import common.typeInfo.pet.Pets;
 
 public class _210_CrossContainerIteration {
-    
+
     public static void display(Iterator<Pet> it) {
         while (it.hasNext()) {
             Pet p = it.next();

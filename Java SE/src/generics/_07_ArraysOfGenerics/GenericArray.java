@@ -5,7 +5,7 @@ public class GenericArray<T> {
 
     @SuppressWarnings("unchecked")
     public GenericArray(int sz) {
-        array =  (T[]) new Object[sz];
+        array = (T[]) new Object[sz];
     }
 
     public void put(int index, T item) {

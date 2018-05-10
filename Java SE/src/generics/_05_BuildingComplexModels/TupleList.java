@@ -1,6 +1,5 @@
 package generics._05_BuildingComplexModels;
 
-
 import java.util.ArrayList;
 
 import generics._01_SimpleGenerics.TupleTest;
