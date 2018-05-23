@@ -1,14 +1,14 @@
-package lambdasinaction.chap6;
+package stream;
 
 import java.util.*;
 import java.util.function.*;
 
 import static java.util.stream.Collectors.*;
-import static lambdasinaction.chap6.Dish.menu;
+import static stream.Dish.menu;
 
 public class Summarizing {
 
-    public static void main(String ... args) {
+    public static void main(String... args) {
         System.out.println("Nr. of dishes: " + howManyDishes());
         System.out.println("The most caloric dish is: " + findMostCaloricDish());
         System.out.println("The most caloric dish is: " + findMostCaloricDishUsingComparator());
@@ -18,7 +18,6 @@ public class Summarizing {
         System.out.println("Short menu: " + getShortMenu());
         System.out.println("Short menu comma separated: " + getShortMenuCommaSeparated());
     }
-
 
     private static long howManyDishes() {
         return menu.stream().collect(counting());

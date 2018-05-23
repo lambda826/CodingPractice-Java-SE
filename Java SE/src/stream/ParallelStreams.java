@@ -1,4 +1,4 @@
-package lambdasinaction.chap7;
+package stream;
 
 import java.util.stream.*;
 

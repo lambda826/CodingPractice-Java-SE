@@ -1,11 +1,11 @@
-package lambdasinaction.chap6;
+package stream;
 
 import static java.util.stream.Collectors.*;
-import static lambdasinaction.chap6.Dish.menu;
+import static stream.Dish.menu;
 
-public class Reducing {
+public class Reducing2 {
 
-    public static void main(String ... args) {
+    public static void main(String... args) {
         System.out.println("Total calories in menu: " + calculateTotalCalories());
         System.out.println("Total calories in menu: " + calculateTotalCaloriesWithMethodReference());
         System.out.println("Total calories in menu: " + calculateTotalCaloriesWithoutCollectors());

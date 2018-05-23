@@ -1,16 +1,16 @@
-package lambdasinaction.chap5;
-import lambdasinaction.chap4.*;
+package stream;
 
-import java.util.stream.*;
-import java.util.*;
+import static stream.Dish.menu;
 
-import static lambdasinaction.chap4.Dish.menu;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
-public class Reducing{
+public class _307_Reducing {
 
-    public static void main(String...args){
+    public static void main(String... args) {
 
-        List<Integer> numbers = Arrays.asList(3,4,5,1,2);
+        List<Integer> numbers = Arrays.asList(3, 4, 5, 1, 2);
         int sum = numbers.stream().reduce(0, (a, b) -> a + b);
         System.out.println(sum);
 
@@ -23,9 +23,7 @@ public class Reducing{
         Optional<Integer> min = numbers.stream().reduce(Integer::min);
         min.ifPresent(System.out::println);
 
-        int calories = menu.stream()
-                           .map(Dish::getCalories)
-                           .reduce(0, Integer::sum);
+        int calories = menu.stream().map(Dish::getCalories).reduce(0, Integer::sum);
         System.out.println("Number of calories:" + calories);
     }
-}
+} 
