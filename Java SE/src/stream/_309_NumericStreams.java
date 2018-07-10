@@ -15,7 +15,7 @@ public class _309_NumericStreams {
         List<Integer> numbers = Arrays.asList(3, 4, 5, 1, 2);
 
         Arrays.stream(numbers.toArray()).forEach(System.out::println);
-        
+
         int calories = menu.stream().mapToInt(Dish::getCalories).sum();
         System.out.println("Number of calories:" + calories);
 

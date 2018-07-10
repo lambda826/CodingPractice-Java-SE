@@ -1,16 +1,16 @@
-//: net/mindview/util/CountingGenerator.java
-// Simple generator implementations.
-package common.utils;
+package array;
 
 import generics._02_GenericInterfaces.Generator;
 
-public class CountingGenerator {
+public class _128_CountingGenerator {
+
+    static char[] chars = ("abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
+
     public static class Boolean implements Generator<java.lang.Boolean> {
         private boolean value = false;
 
         public java.lang.Boolean next() {
-            value = !value; // Just flips back and forth
-            return value;
+            return !value;
         }
     }
 
@@ -22,8 +22,6 @@ public class CountingGenerator {
         }
     }
 
-    static char[] chars = ("abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ").toCharArray();
-
     public static class Character implements Generator<java.lang.Character> {
         int index = -1;
 
@@ -34,6 +32,7 @@ public class CountingGenerator {
     }
 
     public static class String implements Generator<java.lang.String> {
+
         private int length = 7;
         Generator<java.lang.Character> cg = new Character();
 
@@ -46,8 +45,9 @@ public class CountingGenerator {
 
         public java.lang.String next() {
             char[] buf = new char[length];
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < length; i++) {
                 buf[i] = cg.next();
+            }
             return new java.lang.String(buf);
         }
     }
@@ -95,4 +95,4 @@ public class CountingGenerator {
             return result;
         }
     }
-} ///:~
+}

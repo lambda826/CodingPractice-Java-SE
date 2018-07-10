@@ -1,12 +1,11 @@
-//: net/mindview/util/RandomGenerator.java
-// Generators that produce random values.
-package common.utils;
+package array;
 
-import java.util.*;
+import java.util.Random;
 
 import generics._02_GenericInterfaces.Generator;
 
-public class RandomGenerator {
+public class _130_RandomGenerator {
+
     private static Random r = new Random(47);
 
     public static class Boolean implements Generator<java.lang.Boolean> {
@@ -23,15 +22,16 @@ public class RandomGenerator {
 
     public static class Character implements Generator<java.lang.Character> {
         public java.lang.Character next() {
-            return CountingGenerator.chars[r.nextInt(CountingGenerator.chars.length)];
+            return _128_CountingGenerator.chars[r.nextInt(_128_CountingGenerator.chars.length)];
         }
     }
 
-    public static class String extends CountingGenerator.String {
+    public static class String extends _128_CountingGenerator.String {
         // Plug in the random Character generator:
+        // Instance initializer
         {
             cg = new Character();
-        } // Instance initializer
+        }
 
         public String() {
         }
@@ -48,6 +48,7 @@ public class RandomGenerator {
     }
 
     public static class Integer implements Generator<java.lang.Integer> {
+
         private int mod = 10000;
 
         public Integer() {
@@ -63,6 +64,7 @@ public class RandomGenerator {
     }
 
     public static class Long implements Generator<java.lang.Long> {
+
         private int mod = 10000;
 
         public Long() {
@@ -91,4 +93,4 @@ public class RandomGenerator {
             return ((double) trimmed) / 100;
         }
     }
-} ///:~
+}

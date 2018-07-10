@@ -9,8 +9,8 @@ import java.util.ListIterator;
 import java.util.Random;
 import java.util.Vector;
 
-import common.utils.CountingGenerator;
-import common.utils.Generated;
+import array._132_Generated;
+import array._128_CountingGenerator;
 
 public class _275_ListPerformance {
     static Random rand = new Random();
@@ -161,7 +161,7 @@ public class _275_ListPerformance {
             // It produces a non-resizeable array-backed list:
             @Override
             protected List<Integer> initialize(int size) {
-                Integer[] ia = Generated.array(Integer.class, new CountingGenerator.Integer(), size);
+                Integer[] ia = _132_Generated.array(Integer.class, new _128_CountingGenerator.Integer(), size);
                 return Arrays.asList(ia);
             }
         };

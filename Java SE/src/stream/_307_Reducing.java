@@ -26,4 +26,4 @@ public class _307_Reducing {
         int calories = menu.stream().map(Dish::getCalories).reduce(0, Integer::sum);
         System.out.println("Number of calories:" + calories);
     }
-} 
+}

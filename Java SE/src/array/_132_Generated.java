@@ -1,12 +1,9 @@
-//: net/mindview/util/Generated.java
-package common.utils;
-
-import java.util.*;
+package array;
 
 import collections.holding._238_CollectionData;
 import generics._02_GenericInterfaces.Generator;
 
-public class Generated {
+public class _132_Generated {
     // Fill an existing array:
     public static <T> T[] array(T[] a, Generator<T> gen) {
         return new _238_CollectionData<T>(gen, a.length).toArray(a);
@@ -18,4 +15,4 @@ public class Generated {
         T[] a = (T[]) java.lang.reflect.Array.newInstance(type, size);
         return new _238_CollectionData<T>(gen, size).toArray(a);
     }
-} ///:~
+}
