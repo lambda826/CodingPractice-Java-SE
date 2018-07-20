@@ -1,6 +1,7 @@
 package generics._09_Wildcards;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class GenericReading {
 

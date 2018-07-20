@@ -2,7 +2,6 @@
 package enumerations;
 
 import enumerations._04_useEnum.RandomGenerator;
-import util.*;
 
 public enum _220_Meal2 {
     APPETIZER(Food.Appetizer.class), MAINCOURSE(Food.MainCourse.class), DESSERT(Food.Dessert.class), COFFEE(Food.Coffee.class);

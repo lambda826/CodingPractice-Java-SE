@@ -1,9 +1,8 @@
 package generics.OTHERS;
 
-import java.io.*;
-import java.util.*;
-
-import generics._06_Erasure.Widget;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.util.List;
 
 public class ClassCasting {
     @SuppressWarnings("unchecked")

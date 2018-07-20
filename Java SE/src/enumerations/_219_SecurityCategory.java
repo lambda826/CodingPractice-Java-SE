@@ -1,8 +1,6 @@
 package enumerations;
 
 import enumerations._04_useEnum.RandomGenerator;
-// More succinct subcategorization of enums.
-import util.*;
 
 enum _219_SecurityCategory {
     STOCK(Security.Stock.class), BOND(Security.Bond.class);

@@ -1,6 +1,6 @@
 package array;
 
-import collections.holding._238_CollectionData;
+import collectionFrameworks._238_CollectionData;
 import generics._02_GenericInterfaces.Generator;
 
 public class _132_Generated {

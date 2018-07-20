@@ -2,14 +2,23 @@
 // {Args: VendingMachineInput.txt}
 package enumerations;
 
-import java.util.*;
+import static common.utils.Print.print;
+import static enumerations.Input.ABORT_TRANSACTION;
+import static enumerations.Input.CHIPS;
+import static enumerations.Input.DIME;
+import static enumerations.Input.DOLLAR;
+import static enumerations.Input.NICKEL;
+import static enumerations.Input.QUARTER;
+import static enumerations.Input.SOAP;
+import static enumerations.Input.SODA;
+import static enumerations.Input.STOP;
+import static enumerations.Input.TOOTHPASTE;
+
+import java.util.EnumMap;
+import java.util.Iterator;
 
 import common.utils.TextFile;
 import generics._02_GenericInterfaces.Generator;
-import util.*;
-
-import static common.utils.Print.*;
-import static enumerations.Input.*;
 
 enum Category {
     MONEY(NICKEL, DIME, QUARTER, DOLLAR), ITEM_SELECTION(TOOTHPASTE, CHIPS, SODA, SOAP), QUIT_TRANSACTION(ABORT_TRANSACTION), SHUT_DOWN(STOP);
