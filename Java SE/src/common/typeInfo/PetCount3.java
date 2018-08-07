@@ -6,15 +6,15 @@ import static common.utils.Print.printnb;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import collectionFrameworks._242_MapData;
 import common.typeInfo.pet.LiteralPetCreator;
 import common.typeInfo.pet.Pet;
 import common.typeInfo.pet.Pets;
+import containers._142_MapData;
 
 public class PetCount3 {
     static class PetCounter extends LinkedHashMap<Class<? extends Pet>, Integer> {
         public PetCounter() {
-            super(_242_MapData.map(LiteralPetCreator.allTypes, 0));
+            super(_142_MapData.map(LiteralPetCreator.allTypes, 0));
         }
 
         public void count(Pet pet) {

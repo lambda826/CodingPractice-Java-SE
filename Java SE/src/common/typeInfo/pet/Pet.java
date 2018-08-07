@@ -1,8 +1,8 @@
 package common.typeInfo.pet;
 
-import collectionFrameworks._270_Individual;
+import containers.hash._07_Individual;
 
-public class Pet extends _270_Individual {
+public class Pet extends _07_Individual {
     public Pet(String name) {
         super(name);
     }

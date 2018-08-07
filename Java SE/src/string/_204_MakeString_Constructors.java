@@ -7,7 +7,7 @@ package string;
 
 public class _204_MakeString_Constructors {
     public static void main(String args[]) {
-        char c[] = { 'a', 'b', 'c', 'd' ,'e', 'f'};
+        char c[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
         byte ascii[] = { 65, 66, 67, 68, 69, 70 };
         int codePoints[] = { 65, 66, 67, 68, 69, 70 };
         String s1 = new String();
@@ -17,7 +17,7 @@ public class _204_MakeString_Constructors {
         String s5 = new String(ascii);
         String s6 = new String(ascii, 2, 3);
         String s7 = new String(codePoints, 2, 3);
-        
+
         System.out.println(s2);
         System.out.println(s1);
         System.out.println(s2);

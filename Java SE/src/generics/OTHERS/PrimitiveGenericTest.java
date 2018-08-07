@@ -1,6 +1,6 @@
 package generics.OTHERS;
 
-import array._130_RandomGenerator;
+import containers.array._130_RandomGenerator;
 import util.*;
 
 // Fill an array using a generator:
