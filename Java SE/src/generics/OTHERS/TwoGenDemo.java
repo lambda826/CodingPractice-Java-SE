@@ -5,12 +5,12 @@
 
 package generics.OTHERS;
 
-import generics._103_TwoGen;
+import generics._203_TwoGen;
 
 public class TwoGenDemo {
     public static void main(String args[]) {
 
-        _103_TwoGen<Integer, String> tgObj = new _103_TwoGen<Integer, String>(88, "Generics");
+        _203_TwoGen<Integer, String> tgObj = new _203_TwoGen<Integer, String>(88, "Generics");
 
         tgObj.showTypes();
 

@@ -1,9 +1,9 @@
 package containers;
 
-import generics._03_GenericMethods.SetsUtility.ContainerMethodDifferences;
+import generics._124_ContainerMethodDifferences;
 
 public class _136_ContainerMethods {
     public static void main(String[] args) {
-        ContainerMethodDifferences.main(args);
+        _124_ContainerMethodDifferences.main(args);
     }
 }

@@ -1,6 +1,6 @@
 package containers.array;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
 public class _129_GeneratorsTest {
     public static int size = 10;
@@ -9,7 +9,7 @@ public class _129_GeneratorsTest {
         for (Class<?> type : surroundingClass.getClasses()) {
             System.out.print(type.getSimpleName() + ": ");
             try {
-                Generator<?> g = (Generator<?>) type.newInstance();
+                _109_Generator<?> g = (_109_Generator<?>) type.newInstance();
                 for (int i = 0; i < size; i++) {
                     System.out.printf(g.next() + " ");
                 }

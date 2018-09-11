@@ -5,7 +5,7 @@ import static common.utils.Print.print;
 import java.util.Arrays;
 import java.util.Random;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
 public class _139_CompType implements Comparable<_139_CompType> {
     int i;
@@ -31,8 +31,8 @@ public class _139_CompType implements Comparable<_139_CompType> {
 
     private static Random r = new Random(47);
 
-    public static Generator<_139_CompType> generator() {
-        return new Generator<_139_CompType>() {
+    public static _109_Generator<_139_CompType> generator() {
+        return new _109_Generator<_139_CompType>() {
             public _139_CompType next() {
                 return new _139_CompType(r.nextInt(100), r.nextInt(100));
             }

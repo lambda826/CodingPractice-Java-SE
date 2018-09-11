@@ -1,8 +1,5 @@
 package generics.OTHERS;
 
-import generics._02_GenericInterfaces.coffee.Coffee;
-import generics._02_GenericInterfaces.coffee.Latte;
-import generics._02_GenericInterfaces.coffee.Mocha;
 // Using adapters to simulate latent typing.
 // {main: Fill2Test}
 import generics.coffee.*;
@@ -10,6 +7,10 @@ import generics.coffee.*;
 import static common.utils.Print.*;
 
 import java.util.*;
+
+import common.obj.coffee.Coffee;
+import common.obj.coffee.Latte;
+import common.obj.coffee.Mocha;
 import util.*;
 
 interface Addable<T> {

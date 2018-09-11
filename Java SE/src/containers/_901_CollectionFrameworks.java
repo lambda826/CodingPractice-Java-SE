@@ -123,7 +123,7 @@ public class _901_CollectionFrameworks {
     // TreeSet<E> (implements Cloneable, NavigableSet<E>, Serializable)
     public static void TreeSet() {
         // Constructors
-        // TreeSet( )
+        // TreeSet()
         // TreeSet(Collection<? extends E> c)
         // TreeSet(Comparator<? super E> comparator)
         // TreeSet(SortedSet<E> ss)

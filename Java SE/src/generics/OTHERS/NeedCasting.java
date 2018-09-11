@@ -3,7 +3,7 @@ package generics.OTHERS;
 import java.io.*;
 import java.util.*;
 
-import generics._06_Erasure.Widget;
+import generics.Widget;
 
 public class NeedCasting {
     @SuppressWarnings("unchecked")

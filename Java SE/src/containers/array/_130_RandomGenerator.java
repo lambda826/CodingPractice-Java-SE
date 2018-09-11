@@ -2,25 +2,25 @@ package containers.array;
 
 import java.util.Random;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
 public class _130_RandomGenerator {
 
     private static Random r = new Random(47);
 
-    public static class Boolean implements Generator<java.lang.Boolean> {
+    public static class Boolean implements _109_Generator<java.lang.Boolean> {
         public java.lang.Boolean next() {
             return r.nextBoolean();
         }
     }
 
-    public static class Byte implements Generator<java.lang.Byte> {
+    public static class Byte implements _109_Generator<java.lang.Byte> {
         public java.lang.Byte next() {
             return (byte) r.nextInt();
         }
     }
 
-    public static class Character implements Generator<java.lang.Character> {
+    public static class Character implements _109_Generator<java.lang.Character> {
         public java.lang.Character next() {
             return _128_CountingGenerator.chars[r.nextInt(_128_CountingGenerator.chars.length)];
         }
@@ -41,13 +41,13 @@ public class _130_RandomGenerator {
         }
     }
 
-    public static class Short implements Generator<java.lang.Short> {
+    public static class Short implements _109_Generator<java.lang.Short> {
         public java.lang.Short next() {
             return (short) r.nextInt();
         }
     }
 
-    public static class Integer implements Generator<java.lang.Integer> {
+    public static class Integer implements _109_Generator<java.lang.Integer> {
 
         private int mod = 10000;
 
@@ -63,7 +63,7 @@ public class _130_RandomGenerator {
         }
     }
 
-    public static class Long implements Generator<java.lang.Long> {
+    public static class Long implements _109_Generator<java.lang.Long> {
 
         private int mod = 10000;
 
@@ -79,7 +79,7 @@ public class _130_RandomGenerator {
         }
     }
 
-    public static class Float implements Generator<java.lang.Float> {
+    public static class Float implements _109_Generator<java.lang.Float> {
         public java.lang.Float next() {
             // Trim all but the first two decimal places:
             int trimmed = Math.round(r.nextFloat() * 100);
@@ -87,7 +87,7 @@ public class _130_RandomGenerator {
         }
     }
 
-    public static class Double implements Generator<java.lang.Double> {
+    public static class Double implements _109_Generator<java.lang.Double> {
         public java.lang.Double next() {
             long trimmed = Math.round(r.nextDouble() * 100);
             return ((double) trimmed) / 100;

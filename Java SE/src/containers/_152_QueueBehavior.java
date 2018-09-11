@@ -8,12 +8,12 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
 public class _152_QueueBehavior {
     private static int count = 10;
 
-    static <T> void test(Queue<T> queue, Generator<T> gen) {
+    static <T> void test(Queue<T> queue, _109_Generator<T> gen) {
         for (int i = 0; i < count; i++) {
             queue.offer(gen.next());
         }
@@ -23,7 +23,7 @@ public class _152_QueueBehavior {
         System.out.println();
     }
 
-    static class Gen implements Generator<String> {
+    static class Gen implements _109_Generator<String> {
         String[] s = ("one two three four five six seven eight nine ten").split(" ");
         int i;
 

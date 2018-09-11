@@ -8,7 +8,7 @@ package containers.hash;
 import java.util.Map;
 
 public class _02_MapEntry<K, V> implements Map.Entry<K, V> {
-    
+
     private K key;
     private V value;
 
@@ -31,7 +31,6 @@ public class _02_MapEntry<K, V> implements Map.Entry<K, V> {
         return result;
     }
 
-    
     public int hashCode() {
         return (key == null ? 0 : key.hashCode()) ^ (value == null ? 0 : value.hashCode());
     }

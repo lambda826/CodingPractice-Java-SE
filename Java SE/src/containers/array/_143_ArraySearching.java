@@ -4,11 +4,11 @@ import static common.utils.Print.print;
 
 import java.util.Arrays;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
 public class _143_ArraySearching {
     public static void main(String[] args) {
-        Generator<Integer> gen = new _130_RandomGenerator.Integer(1000);
+        _109_Generator<Integer> gen = new _130_RandomGenerator.Integer(1000);
         int[] a = _134_ConvertTo.primitive(_132_Generated.array(new Integer[25], gen));
         Arrays.sort(a);
         print("Sorted array: " + Arrays.toString(a));

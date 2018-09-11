@@ -18,7 +18,7 @@ import java.util.EnumMap;
 import java.util.Iterator;
 
 import common.utils.TextFile;
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
 enum Category {
     MONEY(NICKEL, DIME, QUARTER, DOLLAR), ITEM_SELECTION(TOOTHPASTE, CHIPS, SODA, SOAP), QUIT_TRANSACTION(ABORT_TRANSACTION), SHUT_DOWN(STOP);
@@ -128,7 +128,7 @@ public class VendingMachine {
         }
     }
 
-    static void run(Generator<Input> gen) {
+    static void run(_109_Generator<Input> gen) {
         while (state != State.TERMINAL) {
             state.next(gen.next());
             while (state.isTransient)
@@ -138,7 +138,7 @@ public class VendingMachine {
     }
 
     public static void main(String[] args) {
-        Generator<Input> gen = new RandomInputGenerator();
+        _109_Generator<Input> gen = new RandomInputGenerator();
         if (args.length == 1)
             gen = new FileInputGenerator(args[0]);
         run(gen);
@@ -146,14 +146,14 @@ public class VendingMachine {
 }
 
 // For a basic sanity check:
-class RandomInputGenerator implements Generator<Input> {
+class RandomInputGenerator implements _109_Generator<Input> {
     public Input next() {
         return Input.randomSelection();
     }
 }
 
 // Create Inputs from a file of ';'-separated strings:
-class FileInputGenerator implements Generator<Input> {
+class FileInputGenerator implements _109_Generator<Input> {
     private Iterator<String> input;
 
     public FileInputGenerator(String fileName) {

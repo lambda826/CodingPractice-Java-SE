@@ -6,9 +6,9 @@ import java.util.Iterator;
 
 import containers.array._128_CountingGenerator;
 import containers.array._130_RandomGenerator;
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
-class Letters implements Generator<_141_Pair<Integer, String>>, Iterable<Integer> {
+class Letters implements _109_Generator<_141_Pair<Integer, String>>, Iterable<Integer> {
     private int size = 9;
     private int number = 1;
     private char letter = 'A';
@@ -22,9 +22,11 @@ class Letters implements Generator<_141_Pair<Integer, String>>, Iterable<Integer
             public Integer next() {
                 return number++;
             }
+
             public boolean hasNext() {
                 return number < size;
             }
+
             public void remove() {
                 throw new UnsupportedOperationException();
             }

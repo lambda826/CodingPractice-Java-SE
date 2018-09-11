@@ -3,9 +3,9 @@ package containers;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
-class Government implements Generator<String> {
+class Government implements _109_Generator<String> {
     String[] foundation = ("strange women lying in ponds distributing swords is no basis for a system of government").split(" ");
     private int index;
 

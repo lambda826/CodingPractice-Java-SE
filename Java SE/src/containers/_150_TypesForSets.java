@@ -9,7 +9,7 @@ class SetType {
         i = n;
     }
 
-    // Elements added to a Set must at least define equals( ) to establish object uniqueness
+    // Elements added to a Set must at least define equals() to establish object uniqueness
     public boolean equals(Object o) {
         return o instanceof SetType && (i == ((SetType) o).i);
     }

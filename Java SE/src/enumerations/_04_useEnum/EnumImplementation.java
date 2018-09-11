@@ -2,9 +2,9 @@ package enumerations._04_useEnum;
 
 import java.util.Random;
 
-import generics._02_GenericInterfaces.Generator;
+import generics._109_Generator;
 
-enum CartoonCharacter implements Generator<CartoonCharacter> {
+enum CartoonCharacter implements _109_Generator<CartoonCharacter> {
     SLAPPY, SPANKY, PUNCHY, SILLY, BOUNCY, NUTTY, BOB;
     private Random rand = new Random(47);
 
@@ -14,7 +14,7 @@ enum CartoonCharacter implements Generator<CartoonCharacter> {
 }
 
 public class EnumImplementation {
-    public static <T> void printNext(Generator<T> rg) {
+    public static <T> void printNext(_109_Generator<T> rg) {
         System.out.print(rg.next() + ", ");
     }
 

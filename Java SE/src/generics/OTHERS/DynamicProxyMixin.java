@@ -8,14 +8,14 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-import generics._01_SimpleGenerics.tuple.TwoTuple;
+import generics._102_TwoTuple;
 
 class MixinProxy implements InvocationHandler {
     Map<String, Object> delegatesByMethod;
 
-    public MixinProxy(TwoTuple<Object, Class<?>>... pairs) {
+    public MixinProxy(_102_TwoTuple<Object, Class<?>>... pairs) {
         delegatesByMethod = new HashMap<String, Object>();
-        for (TwoTuple<Object, Class<?>> pair : pairs) {
+        for (_102_TwoTuple<Object, Class<?>> pair : pairs) {
             for (Method method : pair.second.getMethods()) {
                 String methodName = method.getName();
                 // The first interface in the map
@@ -33,7 +33,7 @@ class MixinProxy implements InvocationHandler {
     }
 
     @SuppressWarnings("unchecked")
-    public static Object newInstance(TwoTuple... pairs) {
+    public static Object newInstance(_102_TwoTuple... pairs) {
         Class[] interfaces = new Class[pairs.length];
         for (int i = 0; i < pairs.length; i++) {
             interfaces[i] = (Class) pairs[i].second;

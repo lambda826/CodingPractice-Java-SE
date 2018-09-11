@@ -5,7 +5,7 @@ import java.util.*;
 import util.*;
 
 class ExchangerProducer<T> implements Runnable {
-    private Generator<T> generator;
+    private _109_Generator<T> generator;
     private Exchanger<List<T>> exchanger;
     private List<T> holder;
 
@@ -67,7 +67,7 @@ public class ExchangerDemo {
         ExecutorService exec = Executors.newCachedThreadPool();
         Exchanger<List<Fat>> xc = new Exchanger<List<Fat>>();
         List<Fat> producerList = new CopyOnWriteArrayList<Fat>(), consumerList = new CopyOnWriteArrayList<Fat>();
-        exec.execute(new ExchangerProducer<Fat>(xc, BasicGenerator.create(Fat.class), producerList));
+        exec.execute(new ExchangerProducer<Fat>(xc, _116_BasicGenerator.create(Fat.class), producerList));
         exec.execute(new ExchangerConsumer<Fat>(xc, consumerList));
         TimeUnit.SECONDS.sleep(delay);
         exec.shutdownNow();

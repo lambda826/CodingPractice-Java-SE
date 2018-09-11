@@ -3,7 +3,7 @@ package containers;
 import java.util.*;
 
 public class _148_Unsupported {
-    
+
     static void test(String msg, List<String> list) {
         System.out.println("--- " + msg + " ---");
         Collection<String> c = list;
@@ -52,9 +52,9 @@ public class _148_Unsupported {
         List<String> list = Arrays.asList("A B C D E F G H I J K L".split(" "));
         test("Modifiable Copy", new ArrayList<String>(list));
         test("Arrays.asList()", list);
-        // Collections.unmodifiableList( ). Arrays.asList( ) returns a fixed-sized List
+        // Collections.unmodifiableList(). Arrays.asList() returns a fixed-sized List
         // Whereas,
-        // Collections.unmodifiableList( ) produces a list that cannot be changed
+        // Collections.unmodifiableList() produces a list that cannot be changed
         test("unmodifiableList()", Collections.unmodifiableList(new ArrayList<String>(list)));
     }
 }
