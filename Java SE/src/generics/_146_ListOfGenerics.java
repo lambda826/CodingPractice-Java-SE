@@ -1,4 +1,4 @@
-package generics._07_ArraysOfGenerics;
+package generics;
 
 import java.util.*;
 

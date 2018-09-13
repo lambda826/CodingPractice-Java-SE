@@ -1,11 +1,16 @@
-package generics._07_ArraysOfGenerics;
+package generics;
 
-public class GenericArray2<T> {
+/*
+ * Because of erasure, the runtime type of the array can only be Object[]. 
+ * If we immediately cast it to T[], then at compile time the actual type of the array is lost, and the compiler may miss out on some potential error checks. 
+ * Because of this, it’s better to use an Object[] inside the collection, and add a cast to T when you use an array element.
+ */
+public class _150_GenericArray2<T> {
 
     // The internal representation is now Object[] rather than T[]
     private Object[] array;
 
-    public GenericArray2(int sz) {
+    public _150_GenericArray2(int sz) {
         array = new Object[sz];
     }
 
@@ -24,11 +29,13 @@ public class GenericArray2<T> {
     }
 
     public static void main(String[] args) {
-        GenericArray2<Integer> gai = new GenericArray2<Integer>(10);
-        for (int i = 0; i < 10; i++)
+        _150_GenericArray2<Integer> gai = new _150_GenericArray2<Integer>(10);
+        for (int i = 0; i < 10; i++) {
             gai.put(i, i);
-        for (int i = 0; i < 10; i++)
+        }
+        for (int i = 0; i < 10; i++) {
             System.out.print(gai.get(i) + " ");
+        }
         System.out.println();
         try {
             //  if you call rep(), it again attempts to cast the Object[] to a T[], which is still incorrect, 

@@ -1,15 +1,14 @@
-package generics._07_ArraysOfGenerics;
+package generics;
 
 import java.lang.reflect.*;
 
-/*
- * For new code, you should pass in a type token
- */
-public class GenericArrayWithTypeToken<T> {
+public class _151_GenericArrayWithTypeToken<T> {
+    
     private T[] array;
 
+    // The type token Class<T> is passed into the constructor in order to recover from the erasure, so that we can create the actual type of array that we need, 
     @SuppressWarnings("unchecked")
-    public GenericArrayWithTypeToken(Class<T> type, int sz) {
+    public _151_GenericArrayWithTypeToken(Class<T> type, int sz) {
         array = (T[]) Array.newInstance(type, sz);
     }
 
@@ -27,7 +26,7 @@ public class GenericArrayWithTypeToken<T> {
     }
 
     public static void main(String[] args) {
-        GenericArrayWithTypeToken<Integer> gai = new GenericArrayWithTypeToken<Integer>(Integer.class, 10);
+        _151_GenericArrayWithTypeToken<Integer> gai = new _151_GenericArrayWithTypeToken<Integer>(Integer.class, 10);
         // This now works:
         Integer[] ia = gai.rep();
     }

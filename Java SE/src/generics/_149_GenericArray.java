@@ -1,10 +1,11 @@
-package generics._07_ArraysOfGenerics;
+package generics;
 
-public class GenericArray<T> {
+public class _149_GenericArray<T> {
+    
     private T[] array;
 
     @SuppressWarnings("unchecked")
-    public GenericArray(int sz) {
+    public _149_GenericArray(int sz) {
         array = (T[]) new Object[sz];
     }
 
@@ -22,7 +23,7 @@ public class GenericArray<T> {
     }
 
     public static void main(String[] args) {
-        GenericArray<Integer> gai = new GenericArray<Integer>(10);
+        _149_GenericArray<Integer> gai = new _149_GenericArray<Integer>(10);
 
         // This causes a ClassCastException:
         //! Integer[] ia = gai.rep();

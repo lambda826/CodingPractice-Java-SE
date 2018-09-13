@@ -1,14 +1,15 @@
-package generics._07_ArraysOfGenerics;
+package generics;
 
-public class ArrayOfGeneric {
+public class _148_ArrayOfGeneric {
+
     static final int SIZE = 100;
     static Generic<Integer>[] gia;
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         // Compiles; produces ClassCastException:
-        //! gia = (Generic<Integer>[])new Object[SIZE];
-
+        gia = (Generic<Integer>[]) new Object[SIZE];
+        
         // Runtime type is the raw (erased) type:
         gia = (Generic<Integer>[]) new Generic[SIZE];
 
@@ -18,5 +19,8 @@ public class ArrayOfGeneric {
         //! gia[1] = new Object(); // Compile-time error
         // Discovers type mismatch at compile time:
         //! gia[2] = new Generic<Double>();
+        // The problem is that arrays keep track of their actual type, and that type is established at the point of creation of the array
+        // The only way to successfully create an array of a generic type is to create a new array of the erased type, and cast that
+        
     }
 }
