@@ -12,5 +12,6 @@ public class _215_StringBufferDemo {
         System.out.println("buffer = " + sb);
         System.out.println("length = " + sb.length());
         System.out.println("capacity = " + sb.capacity());
+        
     }
 }
