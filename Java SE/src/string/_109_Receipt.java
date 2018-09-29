@@ -3,6 +3,7 @@ package string;
 import java.util.*;
 
 public class _109_Receipt {
+    
     private double total = 0;
     private Formatter f = new Formatter(System.out);
 
@@ -30,4 +31,5 @@ public class _109_Receipt {
         receipt.print("Three Bears Porridge", 1, 14.29);
         receipt.printTotal();
     }
+    
 }

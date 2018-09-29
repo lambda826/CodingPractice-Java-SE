@@ -1,6 +1,7 @@
 package string;
 
 public class _103_WhitherStringBuilder {
+    
     public String implicit(String[] fields) {
         String result = "";
         for (int i = 0; i < fields.length; i++) {
@@ -16,4 +17,5 @@ public class _103_WhitherStringBuilder {
         }
         return result.toString();
     }
+    
 }

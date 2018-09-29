@@ -3,6 +3,7 @@ package string;
 import static common.utils.Print.print;
 
 public class _101_Immutable {
+    
     public static String upcase(String s) {
         return s.toUpperCase();
     }
@@ -14,4 +15,5 @@ public class _101_Immutable {
         print(qq);
         print(q);
     }
+    
 }

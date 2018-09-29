@@ -74,5 +74,11 @@ public class _901_String_APIs {
         char[] chs = new char[str1.length()];
         str1.getChars(0, str1.length(), chs, 0);
         System.out.println(Arrays.toString(chs));
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println("ABC".startsWith("BCD", 1));
+        
     }
 }
