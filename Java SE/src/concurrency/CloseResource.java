@@ -5,8 +5,10 @@ package concurrency;
 // {RunByHand}
 import java.net.*;
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.io.*;
-import static common.utils.Print.*;
 
 public class CloseResource {
     public static void main(String[] args) throws Exception {

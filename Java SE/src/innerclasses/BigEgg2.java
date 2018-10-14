@@ -1,7 +1,6 @@
 package innerclasses;
 
-// Proper inheritance of an inner class.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Egg2 {
     protected class Yolk {

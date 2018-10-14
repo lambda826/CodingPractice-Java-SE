@@ -2,7 +2,7 @@
 package control;
 
 import static util.Range.*;
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class ForEachInt {
     public static void main(String[] args) {

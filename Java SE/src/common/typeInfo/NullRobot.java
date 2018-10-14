@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 import java.util.Collections;
 import java.util.List;
 
-import common.utils.Null;
+import utils.Null;
 
 class NullRobotProxyHandler implements InvocationHandler {
     private String nullName;

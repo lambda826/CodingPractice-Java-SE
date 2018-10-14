@@ -5,8 +5,10 @@ import java.net.*;
 import java.nio.*;
 import java.nio.channels.*;
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.io.*;
-import static common.utils.Print.*;
 
 class NIOBlocked implements Runnable {
     private final SocketChannel sc;

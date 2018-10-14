@@ -1,8 +1,9 @@
 package io;
 
+import static utils.Print.*;
+
 // Getting different representations from a ByteBuffer
 import java.nio.*;
-import static common.utils.Print.*;
 
 public class GetData {
     private static final int BSIZE = 1024;

@@ -1,7 +1,6 @@
 package reusing;
 
-// Inheritance syntax & properties.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Cleanser {
     private String s = "Cleanser";

@@ -2,8 +2,10 @@ package concurrency;
 
 // Interrupting a blocked thread.
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.io.*;
-import static common.utils.Print.*;
 
 class SleepBlocked implements Runnable {
     public void run() {

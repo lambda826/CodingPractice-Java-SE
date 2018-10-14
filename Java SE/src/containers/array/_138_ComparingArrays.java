@@ -1,7 +1,8 @@
 package containers.array;
 
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class _138_ComparingArrays {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package generics;
 
 public class _139_SimpleHolder {
-    
+
     private Object obj;
 
     public void set(Object obj) {

@@ -1,7 +1,7 @@
 // "Flyweight" Maps and Lists of sample data.
 package containers;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 import java.util.*;
 

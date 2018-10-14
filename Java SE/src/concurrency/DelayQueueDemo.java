@@ -3,7 +3,7 @@ package concurrency;
 import java.util.concurrent.*;
 import java.util.*;
 import static java.util.concurrent.TimeUnit.*;
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class DelayedTask implements Runnable, Delayed {
     private static int counter = 0;

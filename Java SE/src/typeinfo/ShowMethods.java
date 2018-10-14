@@ -1,11 +1,12 @@
 package typeinfo;
 
+import static utils.Print.*;
+
 // Using reflection to show all the methods of a class,
 // even if the methods are defined in the base class.
 // {Args: ShowMethods}
 import java.lang.reflect.*;
 import java.util.regex.*;
-import static common.utils.Print.*;
 
 public class ShowMethods {
     private static String usage = "usage:\n" + "ShowMethods qualified.class.name\n" + "To show all methods in class or:\n" + "ShowMethods qualified.class.name word\n" + "To search for methods involving 'word'";

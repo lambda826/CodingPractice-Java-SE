@@ -4,7 +4,7 @@ package enumerated;
 
 import java.util.*;
 import static enumerated.AlarmPoints.*;
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class EnumSets {
     public static void main(String[] args) {

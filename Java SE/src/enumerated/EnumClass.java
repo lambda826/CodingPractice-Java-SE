@@ -1,7 +1,6 @@
 package enumerated;
 
-// Capabilities of the Enum class
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 enum Shrubbery {
     GROUND, CRAWLING, HANGING

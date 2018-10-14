@@ -1,8 +1,9 @@
 package typeinfo;
 
+import static utils.Print.*;
+
 // Anonymous inner classes can't hide from reflection.
 import typeinfo.interfacea.*;
-import static common.utils.Print.*;
 
 class AnonymousA {
     public static A makeA() {

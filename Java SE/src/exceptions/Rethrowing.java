@@ -5,7 +5,7 @@
 
 package exceptions;
 
-import common.utils.Print;
+import utils.Print;
 
 /*
 

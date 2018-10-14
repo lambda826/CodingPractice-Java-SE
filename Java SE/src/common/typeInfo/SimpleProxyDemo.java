@@ -1,6 +1,6 @@
 package common.typeInfo;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 interface Interface {
     void doSomething();

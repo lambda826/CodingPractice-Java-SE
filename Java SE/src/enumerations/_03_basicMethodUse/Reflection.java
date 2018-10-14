@@ -1,13 +1,13 @@
 package enumerations._03_basicMethodUse;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.Set;
 import java.util.TreeSet;
 
-import common.utils.OSExecute;
+import utils.OSExecute;
 
 enum Explore {
     HERE, THERE

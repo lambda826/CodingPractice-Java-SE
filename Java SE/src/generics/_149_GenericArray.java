@@ -1,7 +1,7 @@
 package generics;
 
 public class _149_GenericArray<T> {
-    
+
     private T[] array;
 
     @SuppressWarnings("unchecked")

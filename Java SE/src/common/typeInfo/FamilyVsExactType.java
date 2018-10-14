@@ -2,7 +2,7 @@
 // The difference between instanceof and class
 package common.typeInfo;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Base {
 }

@@ -3,7 +3,7 @@ package string;
 import java.util.*;
 
 public class _104_UsingStringBuilder {
-    
+
     public static Random rand = new Random(47);
 
     //  if looping is involved, you should explicitly use a StringBuilder in your toString()
@@ -22,5 +22,5 @@ public class _104_UsingStringBuilder {
         _104_UsingStringBuilder usb = new _104_UsingStringBuilder();
         System.out.println(usb);
     }
-    
+
 }

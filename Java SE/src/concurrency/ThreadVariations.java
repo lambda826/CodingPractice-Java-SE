@@ -1,8 +1,9 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // Creating threads with inner classes.
 import java.util.concurrent.*;
-import static common.utils.Print.*;
 
 // Using a named inner class:
 class InnerThread1 {

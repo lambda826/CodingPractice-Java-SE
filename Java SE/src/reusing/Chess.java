@@ -1,7 +1,6 @@
 package reusing;
 
-// Inheritance, constructors and arguments.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Game {
     Game(int i) {

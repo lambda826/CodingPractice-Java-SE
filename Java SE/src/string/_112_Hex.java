@@ -2,10 +2,10 @@ package string;
 
 import java.io.*;
 
-import common.utils.BinaryFile;
+import utils.BinaryFile;
 
 public class _112_Hex {
-    
+
     public static String format(byte[] data) {
         StringBuilder result = new StringBuilder();
         int n = 0;
@@ -27,10 +27,9 @@ public class _112_Hex {
         if (args.length == 0) {
             // Test by displaying this class file:
             System.out.println(format(BinaryFile.read("_112_Hex.class")));
-        }
-        else {
+        } else {
             System.out.println(format(BinaryFile.read(new File(args[0]))));
         }
     }
-    
+
 }

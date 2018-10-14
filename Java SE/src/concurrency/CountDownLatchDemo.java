@@ -1,8 +1,10 @@
 package concurrency;
 
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 // Performs some portion of a task:
 class TaskPortion implements Runnable {

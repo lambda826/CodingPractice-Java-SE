@@ -14,5 +14,5 @@ public class _111_DatabaseException extends Exception {
             System.out.println(e);
         }
     }
-    
+
 }

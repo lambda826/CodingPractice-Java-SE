@@ -5,7 +5,7 @@ package enumerated;
 import java.util.*;
 import util.*;
 import static enumerated.Input.*;
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 enum Category {
     MONEY(NICKEL, DIME, QUARTER, DOLLAR), ITEM_SELECTION(TOOTHPASTE, CHIPS, SODA, SOAP), QUIT_TRANSACTION(ABORT_TRANSACTION), SHUT_DOWN(STOP);

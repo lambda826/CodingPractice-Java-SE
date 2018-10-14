@@ -1,7 +1,8 @@
 package io;
 
+import static utils.Print.*;
+
 import java.nio.*;
-import static common.utils.Print.*;
 
 public class ViewBuffers {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package containers.hash;
 
-import static common.utils.Print.print;
+import static utils.Print.print;
 
 import java.util.ArrayList;
 import java.util.HashMap;

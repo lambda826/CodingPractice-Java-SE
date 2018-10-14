@@ -2,9 +2,11 @@ package concurrency;
 
 // Using pipes for inter-task I/O
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.io.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 class Sender implements Runnable {
     private Random rand = new Random(47);

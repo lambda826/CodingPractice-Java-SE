@@ -2,8 +2,10 @@ package concurrency;
 
 // A dining philosopher
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class Philosopher implements Runnable {
     private Chopstick left;

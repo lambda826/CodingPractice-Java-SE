@@ -1,6 +1,6 @@
 package enumerations;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 enum LikeClasses {
     WINKEN {

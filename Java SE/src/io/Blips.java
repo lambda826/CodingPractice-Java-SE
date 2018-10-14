@@ -1,8 +1,9 @@
 package io;
 
+import static utils.Print.*;
+
 // Simple use of Externalizable & a pitfall.
 import java.io.*;
-import static common.utils.Print.*;
 
 class Blip1 implements Externalizable {
     public Blip1() {

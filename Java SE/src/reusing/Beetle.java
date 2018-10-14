@@ -1,7 +1,6 @@
 package reusing;
 
-// The full process of initialization.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Insect {
     private int i = 9;

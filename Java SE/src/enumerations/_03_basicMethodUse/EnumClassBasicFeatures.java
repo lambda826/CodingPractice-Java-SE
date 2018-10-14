@@ -1,6 +1,6 @@
 package enumerations._03_basicMethodUse;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 enum Shrubbery {
     GROUND, CRAWLING, HANGING

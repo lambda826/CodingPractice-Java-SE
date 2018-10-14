@@ -3,7 +3,7 @@
 // and ordinary method overloading.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Tree {
     int height;

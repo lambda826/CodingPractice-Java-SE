@@ -1,6 +1,6 @@
 package common.typeInfo.toys;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 interface HasBatteries {
 }

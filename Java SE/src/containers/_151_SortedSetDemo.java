@@ -1,6 +1,6 @@
 package containers;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // What you can do with a TreeSet.
 import java.util.*;

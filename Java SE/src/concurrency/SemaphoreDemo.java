@@ -2,8 +2,10 @@ package concurrency;
 
 // Testing the Pool class
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 // A task to check a resource out of a pool:
 class CheckoutTask<T> implements Runnable {

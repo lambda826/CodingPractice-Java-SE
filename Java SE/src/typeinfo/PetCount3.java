@@ -2,9 +2,11 @@ package typeinfo;
 
 // Using isInstance()
 import typeinfo.pets.*;
+
+import static utils.Print.*;
+
 import java.util.*;
 import util.*;
-import static common.utils.Print.*;
 
 public class PetCount3 {
     static class PetCounter extends LinkedHashMap<Class<? extends Pet>, Integer> {

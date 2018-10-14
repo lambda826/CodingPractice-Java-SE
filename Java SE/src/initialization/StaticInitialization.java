@@ -2,7 +2,7 @@
 // Specifying initial values in a class definition.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Bowl {
     Bowl(int marker) {

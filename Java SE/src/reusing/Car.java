@@ -46,7 +46,7 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car car = new Car();
+        _112_Car car = new _112_Car();
         car.left.window.rollup();
         car.wheel[0].inflate(72);
     }

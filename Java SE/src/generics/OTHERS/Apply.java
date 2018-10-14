@@ -1,6 +1,6 @@
 package generics.OTHERS;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // {main: ApplyTest}
 import java.lang.reflect.*;
@@ -50,19 +50,19 @@ class ApplyTest {
             shapes.add(new Shape());
         Apply.apply(shapes, Shape.class.getMethod("rotate"));
         Apply.apply(shapes, Shape.class.getMethod("resize", int.class), 5);
-        List<Square> squares = new ArrayList<Square>();
+        List<_103_Square> squares = new ArrayList<_103_Square>();
         for (int i = 0; i < 10; i++)
-            squares.add(new Square());
+            squares.add(new _103_Square());
         Apply.apply(squares, Shape.class.getMethod("rotate"));
         Apply.apply(squares, Shape.class.getMethod("resize", int.class), 5);
 
         Apply.apply(new FilledList<Shape>(Shape.class, 10), Shape.class.getMethod("rotate"));
-        Apply.apply(new FilledList<Shape>(Square.class, 10), Shape.class.getMethod("rotate"));
+        Apply.apply(new FilledList<Shape>(_103_Square.class, 10), Shape.class.getMethod("rotate"));
 
         SimpleQueue<Shape> shapeQ = new SimpleQueue<Shape>();
         for (int i = 0; i < 5; i++) {
             shapeQ.add(new Shape());
-            shapeQ.add(new Square());
+            shapeQ.add(new _103_Square());
         }
         Apply.apply(shapeQ, Shape.class.getMethod("rotate"));
     }

@@ -1,7 +1,6 @@
 package innerclasses;
 
-// Holds a sequence of Objects.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 interface Counter {
     int next();

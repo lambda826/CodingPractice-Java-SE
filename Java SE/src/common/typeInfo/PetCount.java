@@ -1,7 +1,7 @@
 package common.typeInfo;
 
-import static common.utils.Print.print;
-import static common.utils.Print.printnb;
+import static utils.Print.print;
+import static utils.Print.printnb;
 
 import java.util.HashMap;
 

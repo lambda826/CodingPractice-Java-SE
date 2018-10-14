@@ -1,8 +1,9 @@
 package typeinfo;
 
+import static utils.Print.*;
+
 // Looking for particular methods in a dynamic proxy.
 import java.lang.reflect.*;
-import static common.utils.Print.*;
 
 class MethodSelector implements InvocationHandler {
     private Object proxied;

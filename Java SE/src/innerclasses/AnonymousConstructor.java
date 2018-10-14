@@ -1,7 +1,6 @@
 package innerclasses;
 
-// Creating a constructor for an anonymous inner class.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 abstract class Base {
     public Base(int i) {

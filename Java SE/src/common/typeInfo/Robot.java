@@ -2,7 +2,7 @@ package common.typeInfo;
 
 import java.util.List;
 
-import common.utils.Null;
+import utils.Null;
 
 public interface Robot {
     String name();

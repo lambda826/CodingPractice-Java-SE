@@ -30,7 +30,7 @@ class Triangle extends Shape {
 
 public class Shapes {
     public static void main(String[] args) {
-        List<Shape> shapeList = Arrays.asList(new Circle(), new Square(), new Triangle());
+        List<Shape> shapeList = Arrays.asList(new Circle(), new _103_Square(), new _104_Triangle());
         for (Shape shape : shapeList)
             shape.draw();
     }

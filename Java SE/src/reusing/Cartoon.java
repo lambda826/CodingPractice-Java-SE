@@ -1,7 +1,6 @@
 package reusing;
 
-// Constructor calls during inheritance.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Art {
     Art() {

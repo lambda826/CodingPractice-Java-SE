@@ -1,9 +1,10 @@
 package io;
 
+import static utils.Print.*;
+
 // Sample use of Directory utilities.
 import java.io.*;
 import util.*;
-import static common.utils.Print.*;
 
 public class DirectoryDemo {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package common.typeInfo;
 
-import common.utils.Null;
+import utils.Null;
 
 class Person {
     public final String first;

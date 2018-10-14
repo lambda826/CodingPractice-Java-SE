@@ -1,7 +1,7 @@
 //: control/IfElse.java
 package control;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class IfElse {
     static int result = 0;

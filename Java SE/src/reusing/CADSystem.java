@@ -2,7 +2,7 @@
 // Ensuring proper cleanup.
 package reusing;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Shape {
     Shape(int i) {
@@ -56,7 +56,7 @@ class Line extends Shape {
 
 public class CADSystem extends Shape {
     private Circle c;
-    private Triangle t;
+    private _104_Triangle t;
     private Line[] lines = new Line[3];
 
     public CADSystem(int i) {
@@ -64,7 +64,7 @@ public class CADSystem extends Shape {
         for (int j = 0; j < lines.length; j++)
             lines[j] = new Line(j, j * j);
         c = new Circle(1);
-        t = new Triangle(1);
+        t = new _104_Triangle(1);
         print("Combined constructor");
     }
 

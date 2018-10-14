@@ -14,5 +14,5 @@ public class _105_ArrayListDisplay {
         }
         System.out.println(coffees);
     }
-    
+
 }

@@ -1,7 +1,8 @@
 package containers.array;
 
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class _137_CopyingArrays {
     public static void main(String[] args) {

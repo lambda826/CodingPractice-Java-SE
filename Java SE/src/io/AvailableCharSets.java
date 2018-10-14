@@ -1,9 +1,10 @@
 package io;
 
+import static utils.Print.*;
+
 // Displays Charsets and aliases
 import java.nio.charset.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 public class AvailableCharSets {
     public static void main(String[] args) {

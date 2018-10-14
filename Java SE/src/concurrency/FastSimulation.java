@@ -2,8 +2,10 @@ package concurrency;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class FastSimulation {
     static final int N_ELEMENTS = 100000;

@@ -1,7 +1,6 @@
 package typeinfo;
 
-// Examination of the way the class loader works.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Candy {
     static {

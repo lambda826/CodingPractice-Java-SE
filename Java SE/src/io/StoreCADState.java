@@ -33,7 +33,7 @@ abstract class Shape implements Serializable {
         case 0:
             return new Circle(xVal, yVal, dim);
         case 1:
-            return new Square(xVal, yVal, dim);
+            return new _103_Square(xVal, yVal, dim);
         case 2:
             return new Line(xVal, yVal, dim);
         }
@@ -102,7 +102,7 @@ public class StoreCADState {
         List<Class<? extends Shape>> shapeTypes = new ArrayList<Class<? extends Shape>>();
         // Add references to the class objects:
         shapeTypes.add(Circle.class);
-        shapeTypes.add(Square.class);
+        shapeTypes.add(_103_Square.class);
         shapeTypes.add(Line.class);
         List<Shape> shapes = new ArrayList<Shape>();
         // Make some shapes:
@@ -110,7 +110,7 @@ public class StoreCADState {
             shapes.add(Shape.randomFactory());
         // Set all the static colors to GREEN:
         for (int i = 0; i < 10; i++)
-            ((Shape) shapes.get(i)).setColor(Shape.GREEN);
+            ((Shape) shapes.get(i)).setColor(oop.inheritance.GREEN);
         // Save the state vector:
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("CADState.out"));
         out.writeObject(shapeTypes);

@@ -1,8 +1,9 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // Daemon threads spawn other daemon threads.
 import java.util.concurrent.*;
-import static common.utils.Print.*;
 
 class Daemon implements Runnable {
     private Thread[] t = new Thread[10];

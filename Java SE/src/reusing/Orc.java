@@ -1,7 +1,6 @@
 package reusing;
 
-// The protected keyword.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Villain {
     private String name;

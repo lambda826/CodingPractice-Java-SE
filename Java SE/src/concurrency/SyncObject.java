@@ -1,7 +1,6 @@
 package concurrency;
 
-// Synchronizing on another object.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class DualSynch {
     private Object syncObject = new Object();

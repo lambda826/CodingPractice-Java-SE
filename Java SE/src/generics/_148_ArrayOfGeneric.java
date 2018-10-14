@@ -9,7 +9,7 @@ public class _148_ArrayOfGeneric {
     public static void main(String[] args) {
         // Compiles; produces ClassCastException:
         gia = (Generic<Integer>[]) new Object[SIZE];
-        
+
         // Runtime type is the raw (erased) type:
         gia = (Generic<Integer>[]) new Generic[SIZE];
 
@@ -21,6 +21,6 @@ public class _148_ArrayOfGeneric {
         //! gia[2] = new Generic<Double>();
         // The problem is that arrays keep track of their actual type, and that type is established at the point of creation of the array
         // The only way to successfully create an array of a generic type is to create a new array of the erased type, and cast that
-        
+
     }
 }

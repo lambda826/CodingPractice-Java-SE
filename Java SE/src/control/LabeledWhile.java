@@ -2,7 +2,7 @@
 // While loops with "labeled break" and "labeled continue."
 package control;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class LabeledWhile {
     public static void main(String[] args) {

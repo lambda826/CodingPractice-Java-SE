@@ -3,7 +3,7 @@ package generics;
 import static generics._119_Tuple.tuple;
 
 public class _120_TupleTest2 {
-    
+
     static _102_TwoTuple<String, Integer> f() {
         return tuple("hi", 47);
     }

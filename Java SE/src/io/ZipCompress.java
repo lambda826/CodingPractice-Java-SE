@@ -4,9 +4,11 @@ package io;
 // number of files given on the command line.
 // {Args: ZipCompress.java}
 import java.util.zip.*;
+
+import static utils.Print.*;
+
 import java.io.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 public class ZipCompress {
     public static void main(String[] args) throws IOException {

@@ -2,8 +2,9 @@
 // Demonstrates the switch statement.
 package control;
 
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class VowelsAndConsonants {
     public static void main(String[] args) {

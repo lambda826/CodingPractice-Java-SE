@@ -2,8 +2,10 @@ package concurrency;
 
 // Using CyclicBarriers.
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 class Horse implements Runnable {
     private static int counter = 0;

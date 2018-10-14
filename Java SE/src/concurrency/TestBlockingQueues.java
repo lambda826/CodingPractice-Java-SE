@@ -2,8 +2,10 @@ package concurrency;
 
 // {RunByHand}
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.io.*;
-import static common.utils.Print.*;
 
 class LiftOffRunner implements Runnable {
     private BlockingQueue<LiftOff> rockets;

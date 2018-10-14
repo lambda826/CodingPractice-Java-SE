@@ -5,8 +5,10 @@ package concurrency;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 import java.util.concurrent.locks.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 abstract class Accumulator {
     public static long cycles = 50000L;

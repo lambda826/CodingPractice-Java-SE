@@ -3,7 +3,7 @@ package containers;
 import java.util.Set;
 import java.util.TreeSet;
 
-import common.utils.TextFile;
+import utils.TextFile;
 
 public class _119_UniqueWords {
     public static void main(String[] args) {

@@ -1,8 +1,6 @@
 package reusing;
 
-// It only looks like you can override
-// a private or private final method.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class WithFinals {
     // Identical to "private" alone:

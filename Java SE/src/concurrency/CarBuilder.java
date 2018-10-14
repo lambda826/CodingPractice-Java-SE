@@ -2,8 +2,10 @@ package concurrency;
 
 // A complex example of tasks working together.
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 class Car {
     private final int id;
@@ -55,7 +57,7 @@ class ChassisBuilder implements Runnable {
             while (!Thread.interrupted()) {
                 TimeUnit.MILLISECONDS.sleep(500);
                 // Make chassis:
-                Car c = new Car(counter++);
+                _112_Car c = new _112_Car(counter++);
                 print("ChassisBuilder created " + c);
                 // Insert into queue
                 carQueue.put(c);
@@ -69,7 +71,7 @@ class ChassisBuilder implements Runnable {
 
 class Assembler implements Runnable {
     private CarQueue chassisQueue, finishingQueue;
-    private Car car;
+    private _112_Car car;
     private CyclicBarrier barrier = new CyclicBarrier(4);
     private RobotPool robotPool;
 
@@ -79,7 +81,7 @@ class Assembler implements Runnable {
         robotPool = rp;
     }
 
-    public Car car() {
+    public _112_Car car() {
         return car;
     }
 

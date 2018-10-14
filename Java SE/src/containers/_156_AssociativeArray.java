@@ -1,6 +1,6 @@
 package containers;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class _156_AssociativeArray<K, V> {
     private Object[][] pairs;

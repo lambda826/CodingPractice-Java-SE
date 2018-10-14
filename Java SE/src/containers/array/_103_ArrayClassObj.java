@@ -2,8 +2,9 @@
 // Creating an array of nonprimitive objects.
 package containers.array;
 
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class _103_ArrayClassObj {
     public static void main(String[] args) {

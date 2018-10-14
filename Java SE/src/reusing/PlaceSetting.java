@@ -1,7 +1,6 @@
 package reusing;
 
-// Combining composition & inheritance.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Plate {
     Plate(int i) {

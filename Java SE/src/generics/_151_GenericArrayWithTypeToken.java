@@ -3,7 +3,7 @@ package generics;
 import java.lang.reflect.*;
 
 public class _151_GenericArrayWithTypeToken<T> {
-    
+
     private T[] array;
 
     // The type token Class<T> is passed into the constructor in order to recover from the erasure, so that we can create the actual type of array that we need, 

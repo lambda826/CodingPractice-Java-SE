@@ -4,7 +4,7 @@ package generics.OTHERS;
 // {main: Fill2Test}
 import generics.coffee.*;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 import java.util.*;
 

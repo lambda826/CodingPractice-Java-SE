@@ -1,6 +1,6 @@
 package generics.OTHERS;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // Using Reflection to produce latent typing.
 import java.lang.reflect.*;

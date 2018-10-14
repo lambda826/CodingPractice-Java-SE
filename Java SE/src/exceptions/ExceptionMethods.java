@@ -5,7 +5,7 @@
 
 package exceptions;
 
-import static common.utils.Print.print;
+import static utils.Print.print;
 
 public class ExceptionMethods {
     public static void main(String[] args) {

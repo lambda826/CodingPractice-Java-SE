@@ -1,6 +1,6 @@
 package common.typeInfo;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // Looking for particular methods in a dynamic proxy.
 import java.lang.reflect.*;

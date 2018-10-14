@@ -1,8 +1,9 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // Daemon threads don't prevent the program from ending.
 import java.util.concurrent.*;
-import static common.utils.Print.*;
 
 public class SimpleDaemons implements Runnable {
     public void run() {

@@ -1,9 +1,10 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // Using a Thread Factory to create daemons.
 import java.util.concurrent.*;
 import util.*;
-import static common.utils.Print.*;
 
 public class DaemonFromFactory implements Runnable {
     public void run() {

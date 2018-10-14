@@ -1,9 +1,10 @@
 package enumerated;
 
+import static utils.Print.*;
+
 // Modeling a post office.
 import java.util.*;
 import util.*;
-import static common.utils.Print.*;
 
 class Mail {
     // The NO's lower the probability of random selection:

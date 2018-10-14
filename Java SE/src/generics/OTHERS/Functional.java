@@ -1,6 +1,6 @@
 package generics.OTHERS;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 import java.math.*;
 import java.util.concurrent.atomic.*;

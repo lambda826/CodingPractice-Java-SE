@@ -4,8 +4,10 @@ package concurrency;
 // objects," or other active objects as arguments
 // to asynch methods.
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class ActiveObjectDemo {
     private ExecutorService ex = Executors.newSingleThreadExecutor();

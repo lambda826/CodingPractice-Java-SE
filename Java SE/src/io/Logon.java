@@ -2,9 +2,11 @@ package io;
 
 // Demonstrates the "transient" keyword.
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.io.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 public class Logon implements Serializable {
     private Date date = new Date();

@@ -7,7 +7,7 @@ class House extends Building {
 }
 
 public class _142_ClassTypeCapture<T> {
-    
+
     // sometimes you must compensate for erasure by introducing a type tag. 
     // This means you explicitly pass in the Class object for your type so that you can use it in type expressions.
     Class<T> kind;

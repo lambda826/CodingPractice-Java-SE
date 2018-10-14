@@ -4,7 +4,7 @@ import java.lang.reflect.*;
 import java.util.*;
 
 public class _124_ContainerMethodDifferences {
-    
+
     static Set<String> methodSet(Class<?> type) {
         Set<String> result = new TreeSet<String>();
         for (Method m : type.getMethods()) {

@@ -1,8 +1,9 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // Daemon threads don't run the finally clause
 import java.util.concurrent.*;
-import static common.utils.Print.*;
 
 class ADaemon implements Runnable {
     public void run() {

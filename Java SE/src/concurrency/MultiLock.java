@@ -1,7 +1,6 @@
 package concurrency;
 
-// One thread can reacquire the same lock.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class MultiLock {
     public synchronized void f1(int count) {

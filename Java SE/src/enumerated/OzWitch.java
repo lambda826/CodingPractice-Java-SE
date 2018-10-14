@@ -1,7 +1,6 @@
 package enumerated;
 
-// The witches in the land of Oz.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public enum OzWitch {
     // Instances must be defined first, before methods:

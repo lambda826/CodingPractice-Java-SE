@@ -2,8 +2,10 @@ package concurrency;
 
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class ReaderWriterList<T> {
     private ArrayList<T> lockedList;

@@ -2,7 +2,7 @@
 // Demonstrates initialization order.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // When the constructor is called to create a
 // Window object, you'll see a message:

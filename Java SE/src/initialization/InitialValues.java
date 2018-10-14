@@ -2,7 +2,7 @@
 // Shows default initial values.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class InitialValues {
     boolean t;

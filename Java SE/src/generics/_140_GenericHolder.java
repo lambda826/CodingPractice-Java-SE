@@ -1,7 +1,7 @@
 package generics;
 
 public class _140_GenericHolder<T> {
-    
+
     private T obj;
 
     public void set(T obj) {

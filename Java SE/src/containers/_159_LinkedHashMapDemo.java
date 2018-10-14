@@ -1,6 +1,6 @@
 package containers;
 
-import static common.utils.Print.print;
+import static utils.Print.print;
 
 import java.util.LinkedHashMap;
 

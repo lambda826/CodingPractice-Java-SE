@@ -1,8 +1,9 @@
 package reusing;
 
+import static utils.Print.*;
+
 // The effect of final on fields.
 import java.util.*;
-import static common.utils.Print.*;
 
 class Value {
     int i; // Package access

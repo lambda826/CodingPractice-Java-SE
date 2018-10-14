@@ -4,8 +4,10 @@ package io;
 // {RunByHand}
 import java.nio.*;
 import java.nio.channels.*;
+
+import static utils.Print.*;
+
 import java.io.*;
-import static common.utils.Print.*;
 
 public class LargeMappedFiles {
     static int length = 0x8FFFFFF; // 128 MB

@@ -2,7 +2,7 @@
 // Uses the static printing methods in Print.java.
 package access;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class PrintTest {
     public static void main(String[] args) {

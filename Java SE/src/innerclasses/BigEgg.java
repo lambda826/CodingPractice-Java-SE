@@ -1,7 +1,6 @@
 package innerclasses;
 
-// An inner class cannot be overriden like a method.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Egg {
     private Yolk y;

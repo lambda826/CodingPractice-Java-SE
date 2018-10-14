@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 class Product {
-    
+
     private final int id;
     private String description;
     private double price;
@@ -54,7 +54,7 @@ class Office {
 }
 
 public class _127_Store extends ArrayList<Aisle> {
-    
+
     private ArrayList<CheckoutStand> checkouts = new ArrayList<CheckoutStand>();
     private Office office = new Office();
 

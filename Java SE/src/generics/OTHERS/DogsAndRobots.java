@@ -3,7 +3,7 @@ package generics.OTHERS;
 // No latent typing in Java
 import typeinfo.pets.*;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 import common.typeInfo.pet.Dog;
 

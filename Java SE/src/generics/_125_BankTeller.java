@@ -7,7 +7,7 @@ import java.util.Queue;
 import java.util.Random;
 
 class Customer {
-    
+
     private static long counter = 1;
     private final long id = counter++;
 
@@ -29,7 +29,7 @@ class Customer {
 }
 
 class Teller {
-    
+
     private static long counter = 1;
     private final long id = counter++;
 
@@ -49,7 +49,7 @@ class Teller {
 }
 
 public class _125_BankTeller {
-    
+
     public static void serve(Teller t, Customer c) {
         System.out.println(t + " serves " + c);
     }

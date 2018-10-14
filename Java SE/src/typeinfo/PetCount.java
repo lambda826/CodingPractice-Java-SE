@@ -2,8 +2,10 @@ package typeinfo;
 
 // Using instanceof.
 import typeinfo.pets.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class PetCount {
     static class PetCounter extends HashMap<String, Integer> {

@@ -2,7 +2,7 @@
 // Overloading based on the order of the arguments.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class OverloadingOrder {
     static void f(String s, int i) {

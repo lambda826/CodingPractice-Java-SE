@@ -1,8 +1,10 @@
 package concurrency;
 
 import java.util.concurrent.*;
+
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 class Count {
     private int count = 0;

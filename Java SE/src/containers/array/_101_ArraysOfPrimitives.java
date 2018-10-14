@@ -1,6 +1,6 @@
 package containers.array;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class _101_ArraysOfPrimitives {
     public static void main(String[] args) {

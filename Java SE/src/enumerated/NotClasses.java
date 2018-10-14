@@ -1,7 +1,6 @@
 package enumerated;
 
-// {Exec: javap -c LikeClasses}
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 enum LikeClasses {
     WINKEN {

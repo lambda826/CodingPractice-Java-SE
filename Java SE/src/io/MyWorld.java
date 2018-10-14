@@ -1,8 +1,9 @@
 package io;
 
+import static utils.Print.*;
+
 import java.io.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 class House implements Serializable {
 }

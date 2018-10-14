@@ -1,8 +1,9 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // The producer-consumer approach to task cooperation.
 import java.util.concurrent.*;
-import static common.utils.Print.*;
 
 class Meal {
     private final int orderNum;

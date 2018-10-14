@@ -1,8 +1,9 @@
 package typeinfo;
 
+import static utils.Print.*;
+
 import typeinfo.pets.*;
 import util.*;
-import static common.utils.Print.*;
 
 public class PetCount4 {
     public static void main(String[] args) {

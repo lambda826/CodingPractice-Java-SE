@@ -2,8 +2,8 @@
 // Basics of EnumMaps.
 package enumerations;
 
-import static common.utils.Print.*;
 import static enumerations.AlarmPoints.*;
+import static utils.Print.*;
 
 import java.util.EnumMap;
 import java.util.Map;

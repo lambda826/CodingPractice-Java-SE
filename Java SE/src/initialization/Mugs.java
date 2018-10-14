@@ -2,7 +2,7 @@
 // Java "Instance Initialization."
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Mug {
     Mug(int marker) {

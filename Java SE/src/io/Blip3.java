@@ -1,8 +1,9 @@
 package io;
 
+import static utils.Print.*;
+
 // Reconstructing an externalizable object.
 import java.io.*;
-import static common.utils.Print.*;
 
 public class Blip3 implements Externalizable {
     private int i;

@@ -1,9 +1,10 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // Interrupting a task blocked with a ReentrantLock.
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
-import static common.utils.Print.*;
 
 class BlockedMutex {
     private Lock lock = new ReentrantLock();

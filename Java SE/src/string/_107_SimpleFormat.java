@@ -1,7 +1,7 @@
 package string;
 
 public class _107_SimpleFormat {
-    
+
     public static void main(String[] args) {
         int x = 5;
         double y = 5.332542;
@@ -12,5 +12,5 @@ public class _107_SimpleFormat {
         // or
         System.out.printf("Row 1: [%d %f]\n", x, y);
     }
-    
+
 }

@@ -1,9 +1,10 @@
 package io;
 
+import static utils.Print.*;
+
 // Demonstrates object serialization.
 import java.io.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 class Data implements Serializable {
     private int n;

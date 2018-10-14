@@ -1,6 +1,6 @@
 package containers.collection.collections;
 
-import static common.utils.Print.print;
+import static utils.Print.print;
 
 // Sorting and searching Lists with Collections utilities.
 import java.util.ArrayList;

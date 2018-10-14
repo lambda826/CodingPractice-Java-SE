@@ -1,7 +1,6 @@
 package concurrency;
 
-// Understanding join().
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Sleeper extends Thread {
     private int duration;

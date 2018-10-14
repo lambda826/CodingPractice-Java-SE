@@ -1,9 +1,10 @@
 package concurrency;
 
+import static utils.Print.*;
+
 // General idiom for interrupting a task.
 // {Args: 1100}
 import java.util.concurrent.*;
-import static common.utils.Print.*;
 
 class NeedsCleanup {
     private final int id;

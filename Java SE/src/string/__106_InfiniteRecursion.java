@@ -23,5 +23,5 @@ public class __106_InfiniteRecursion {
         }
         System.out.println(v);
     }
-    
+
 }

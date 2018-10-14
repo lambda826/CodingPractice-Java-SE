@@ -5,7 +5,7 @@ interface FactoryI<T> {
 }
 
 class Foo2<T> {
-    
+
     private T x;
 
     public <F extends FactoryI<T>> Foo2(F factory) {

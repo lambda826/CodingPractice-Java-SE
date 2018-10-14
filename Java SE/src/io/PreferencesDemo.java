@@ -1,7 +1,8 @@
 package io;
 
+import static utils.Print.*;
+
 import java.util.prefs.*;
-import static common.utils.Print.*;
 
 public class PreferencesDemo {
     public static void main(String[] args) throws Exception {

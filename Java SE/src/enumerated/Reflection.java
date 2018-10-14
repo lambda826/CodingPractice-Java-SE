@@ -1,10 +1,11 @@
 package enumerated;
 
+import static utils.Print.*;
+
 // Analyzing enums using reflection.
 import java.lang.reflect.*;
 import java.util.*;
 import util.*;
-import static common.utils.Print.*;
 
 enum Explore {
     HERE, THERE

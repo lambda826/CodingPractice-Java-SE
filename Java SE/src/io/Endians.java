@@ -1,9 +1,10 @@
 package io;
 
+import static utils.Print.*;
+
 // Endian differences and data storage.
 import java.nio.*;
 import java.util.*;
-import static common.utils.Print.*;
 
 public class Endians {
     public static void main(String[] args) {

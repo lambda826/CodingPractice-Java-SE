@@ -2,7 +2,7 @@
 // Using inner classes for callbacks
 package innerclasses;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 interface Incrementable {
     void increment();

@@ -1,8 +1,9 @@
 package typeinfo;
 
+import static utils.Print.*;
+
 // Private inner classes can't hide from reflection.
 import typeinfo.interfacea.*;
-import static common.utils.Print.*;
 
 class InnerA {
     private static class C implements A {

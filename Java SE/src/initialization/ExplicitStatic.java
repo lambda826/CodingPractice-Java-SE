@@ -2,7 +2,7 @@
 // Explicit static initialization with the "static" clause.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Cup {
     Cup(int marker) {

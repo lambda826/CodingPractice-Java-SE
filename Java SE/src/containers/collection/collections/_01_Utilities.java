@@ -1,6 +1,6 @@
 package containers.collection.collections;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // Simple demonstrations of the Collections utilities.
 import java.util.*;

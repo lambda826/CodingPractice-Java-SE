@@ -2,7 +2,7 @@
 // Promotion of primitives and overloading.
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class PrimitiveOverloading {
     void f1(char x) {

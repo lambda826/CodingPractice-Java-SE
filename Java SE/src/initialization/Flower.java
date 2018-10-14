@@ -2,7 +2,7 @@
 // Calling constructors with "this"
 package initialization;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 public class Flower {
     int petalCount = 0;

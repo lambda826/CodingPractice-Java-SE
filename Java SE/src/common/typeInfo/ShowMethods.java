@@ -1,6 +1,6 @@
 package common.typeInfo;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // Using reflection to show all the methods of a class,
 // even if the methods are defined in the base class.

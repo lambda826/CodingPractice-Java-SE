@@ -1,7 +1,6 @@
 package enumerated;
 
-// Enums in switch statements.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 // Define an enum type:
 enum Signal {

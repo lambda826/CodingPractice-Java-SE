@@ -1,7 +1,6 @@
 package reusing;
 
-// Constructor initialization with composition.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Soap {
     private String s;

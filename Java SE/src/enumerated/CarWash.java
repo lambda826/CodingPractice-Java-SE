@@ -1,7 +1,8 @@
 package enumerated;
 
+import static utils.Print.*;
+
 import java.util.*;
-import static common.utils.Print.*;
 
 public class CarWash {
     public enum Cycle {

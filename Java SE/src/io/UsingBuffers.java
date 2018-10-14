@@ -1,7 +1,8 @@
 package io;
 
+import static utils.Print.*;
+
 import java.nio.*;
-import static common.utils.Print.*;
 
 public class UsingBuffers {
     private static void symmetricScramble(CharBuffer buffer) {

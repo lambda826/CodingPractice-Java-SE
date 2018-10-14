@@ -1,11 +1,11 @@
 package generics;
 
-import static common.utils.Print.print;
 import static generics._121_Sets.complement;
 import static generics._121_Sets.difference;
 import static generics._121_Sets.intersection;
 import static generics._121_Sets.union;
 import static generics._122_Watercolors.*;
+import static utils.Print.print;
 
 import java.util.EnumSet;
 import java.util.Set;

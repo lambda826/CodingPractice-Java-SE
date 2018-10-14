@@ -1,8 +1,6 @@
 package reusing;
 
-// Overloading a base-class method name in a derived
-// class does not hide the base-class versions.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class Homer {
     char doh(char c) {

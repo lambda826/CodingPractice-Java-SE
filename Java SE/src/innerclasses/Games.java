@@ -1,7 +1,6 @@
 package innerclasses;
 
-// Using anonymous inner classes with the Game framework.
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 interface Game {
     boolean move();

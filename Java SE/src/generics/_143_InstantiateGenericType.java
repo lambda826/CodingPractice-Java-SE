@@ -1,9 +1,9 @@
 package generics;
 
-import static common.utils.Print.*;
+import static utils.Print.*;
 
 class ClassAsFactory<T> {
-    
+
     T x;
 
     public ClassAsFactory(Class<T> kind) {
