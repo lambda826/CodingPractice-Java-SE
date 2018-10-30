@@ -3,12 +3,13 @@
  *  @date  : 2018-07-27 17:08
  */
 
-package containers.comparatorAndComparable;
+package containers.comparator_comparable;
 
 import java.util.Comparator;
 import java.util.TreeSet;
 
 class MyComp implements Comparator<String> {
+    
     public int compare(String aStr, String bStr) {
         // Reverse the comparison. 
         return bStr.compareTo(aStr);

@@ -3,7 +3,7 @@
  *  @date  : 2018-07-27 17:12
  */
 
-package containers.comparatorAndComparable;
+package containers.comparator_comparable;
 
 import java.util.TreeSet;
 
