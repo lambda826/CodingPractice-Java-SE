@@ -1,4 +1,3 @@
-//: initialization/Spiciness.java
 package enumerations._01_enums;
 
 public enum Spiciness {

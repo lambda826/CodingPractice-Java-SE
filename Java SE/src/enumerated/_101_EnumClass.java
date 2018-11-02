@@ -6,7 +6,7 @@ enum Shrubbery {
     GROUND, CRAWLING, HANGING
 }
 
-public class EnumClass {
+public class _101_EnumClass {
     public static void main(String[] args) {
         for (Shrubbery s : Shrubbery.values()) {
             print(s + " ordinal: " + s.ordinal());
@@ -23,23 +23,4 @@ public class EnumClass {
             print(shrub);
         }
     }
-} /* Output:
-  GROUND ordinal: 0
-  -1 false false
-  class Shrubbery
-  GROUND
-  ----------------------
-  CRAWLING ordinal: 1
-  0 true true
-  class Shrubbery
-  CRAWLING
-  ----------------------
-  HANGING ordinal: 2
-  1 false false
-  class Shrubbery
-  HANGING
-  ----------------------
-  HANGING
-  CRAWLING
-  GROUND
-  *///:~
+}

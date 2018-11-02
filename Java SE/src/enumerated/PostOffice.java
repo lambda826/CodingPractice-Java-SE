@@ -47,11 +47,11 @@ class Mail {
     // Generate test Mail:
     public static Mail randomMail() {
         Mail m = new Mail();
-        m.generalDelivery = Enums.random(GeneralDelivery.class);
-        m.scannability = Enums.random(Scannability.class);
-        m.readability = Enums.random(Readability.class);
-        m.address = Enums.random(Address.class);
-        m.returnAddress = Enums.random(ReturnAddress.class);
+        m.generalDelivery = _111_Enums.random(GeneralDelivery.class);
+        m.scannability = _111_Enums.random(Scannability.class);
+        m.readability = _111_Enums.random(Readability.class);
+        m.address = _111_Enums.random(Address.class);
+        m.returnAddress = _111_Enums.random(ReturnAddress.class);
         return m;
     }
 
