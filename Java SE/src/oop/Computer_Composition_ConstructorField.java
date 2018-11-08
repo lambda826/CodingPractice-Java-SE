@@ -5,18 +5,16 @@
 
 package oop;
 
-
-
-public class Computer_Aggregation {
+public class Computer_Composition_ConstructorField {
 
     private String cpu;
     private double weight;
     private Monitor aMonitor;
 
-    public Computer_Aggregation(String cpu, double weight, Monitor aMonitor) {
+    public Computer_Composition_ConstructorField(String cpu, double weight, int inch, boolean isFlat) {
         this.cpu = cpu;
         this.weight = weight;
-        this.aMonitor = aMonitor;
+        this.aMonitor = new Monitor(inch, isFlat);
     }
 
     public void turnOn() {
@@ -25,11 +23,10 @@ public class Computer_Aggregation {
 
     public static void main(String aa[]) {
 
-        Monitor aMonitor = new Monitor(15, true);
-        System.out.println("I do something others here");
-        Computer_Aggregation aComputer = new Computer_Aggregation("586", 32.0, aMonitor);
+        //Monitor aMonitor=new Monitor(15, true);
+        Computer_Composition_ConstructorField aComputer = new Computer_Composition_ConstructorField("586", 32.0, 15, true);
         System.out.println("Computer is :" + aComputer);
         aComputer.turnOn();
-    }
 
+    }
 }

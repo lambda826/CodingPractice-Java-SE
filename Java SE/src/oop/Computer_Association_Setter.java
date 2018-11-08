@@ -5,14 +5,13 @@
 
 package oop;
 
-
-public class Computer_Association {
+public class Computer_Association_Setter {
 
     private String cpu;
     private double weight;
     private Monitor aMonitor;
 
-    public Computer_Association(String cpu, double weight) {
+    public Computer_Association_Setter(String cpu, double weight) {
         this.cpu = cpu;
         this.weight = weight;
     }
@@ -26,7 +25,7 @@ public class Computer_Association {
     }
 
     public static void main(String aa[]) {
-        Computer_Association aComputer = new Computer_Association("Leo", 25);
+        Computer_Association_Setter aComputer = new Computer_Association_Setter("Leo", 25);
         Monitor aMonitor = new Monitor(15, true);
         aComputer.setaMonitor(aMonitor);
         aComputer.turnOn();

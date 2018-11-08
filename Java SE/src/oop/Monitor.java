@@ -5,7 +5,6 @@
 
 package oop;
 
-
 public class Monitor {
 
     private int inch;
