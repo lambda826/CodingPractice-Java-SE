@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class _307_Sorting {
+public class _05_Sorting {
 
     public static class Apple {
         private Integer weight = 0;

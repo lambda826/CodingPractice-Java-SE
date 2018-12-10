@@ -1,6 +1,6 @@
 package lambda;
 
-public class _304_MeaningOfThis {
+public class _02_MeaningOfThis {
     public final int value = 4;
 
     public void doIt() {
@@ -19,7 +19,7 @@ public class _304_MeaningOfThis {
     }
 
     public static void main(String... args) {
-        _304_MeaningOfThis m = new _304_MeaningOfThis();
+        _02_MeaningOfThis m = new _02_MeaningOfThis();
         m.doIt();
     }
 }
