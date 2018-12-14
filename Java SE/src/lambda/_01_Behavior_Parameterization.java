@@ -1,8 +1,3 @@
-/**
- *  @author Yunxiang He
- *  @date   12/09/2018
- */
-
 package lambda;
 
 import java.util.ArrayList;
@@ -20,9 +15,25 @@ public class _01_Behavior_Parameterization<T> {
         RED, GREEN
     }
 
-    static class Apple {
+    public static class Fruit {
+
+    }
+
+    public static class Orange extends Fruit {
+        public Orange(int weight) {
+        }
+    }
+
+    public static class Apple extends Fruit {
         private int weight = 0;
         private Color color;
+
+        public Apple() {
+        }
+
+        public Apple(int weight) {
+            this.weight = weight;
+        }
 
         public Apple(int weight, Color color) {
             this.weight = weight;

@@ -2,7 +2,6 @@ package lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 import lambda._01_Behavior_Parameterization.Apple;
@@ -14,24 +13,14 @@ public class _04_Lambdas {
         public boolean test(Apple a);
     }
 
-    public static void main(String... args) {
+    static interface DoubleNumberArrayFunc {
+        double func(double[] n) throws EmptyArrayException;
+    }
 
-        // Simple example
-        Runnable r = () -> System.out.println("Hello!");
-        r.run();
-
-        // Filtering with lambdas
-        List<Apple> inventory = Arrays.asList(new Apple(80, Color.GREEN), new Apple(155, Color.GREEN), new Apple(120, Color.RED));
-
-        // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]	
-        List<Apple> greenApples = filter(inventory, (Apple a) -> Color.GREEN.equals(a.getColor()));
-        System.out.println(greenApples);
-
-        Comparator<Apple> c = (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
-
-        // [Apple{color='green', weight=80}, Apple{color='red', weight=120}, Apple{color='green', weight=155}]
-        inventory.sort(c);
-        System.out.println(inventory);
+    static class EmptyArrayException extends Exception {
+        public EmptyArrayException() {
+            super("Array Empty");
+        }
     }
 
     public static List<Apple> filter(List<Apple> inventory, ApplePredicate p) {
@@ -42,6 +31,34 @@ public class _04_Lambdas {
             }
         }
         return result;
+    }
+
+    public static void main(String... args) {
+
+        // Example 1: () -> void
+        Runnable r = () -> System.out.println("Hello!");
+        r.run();
+
+        // Example 2: Passing lambda as argument, (Apple) -> boolean
+        List<Apple> inventory = Arrays.asList(new Apple(80, Color.GREEN), new Apple(155, Color.GREEN), new Apple(120, Color.RED));
+        System.out.println(filter(inventory, (Apple a) -> Color.GREEN.equals(a.getColor())));
+
+        // Example 3: (T, T) -> int
+        inventory.sort((Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight()));
+
+        // Example 4: Lambda w/ exception
+        double[] values = { 1.0, 2.0 };
+        DoubleNumberArrayFunc average = (n) -> {
+            double sum = 0;
+            if (n.length == 0) {
+                throw new EmptyArrayException();
+            }
+            for (int i = 0; i < n.length; i++) {
+                sum += n[i];
+            }
+            return sum / n.length;
+        };
+
     }
 
 }
