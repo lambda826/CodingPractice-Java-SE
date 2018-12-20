@@ -13,7 +13,7 @@ enum Explore {
 }
 
 public class _107_Reflection_Values {
-    
+
     public static Set<String> analyze(Class<?> enumClass) {
         print("----- Analyzing " + enumClass + " -----");
         print("Interfaces:");

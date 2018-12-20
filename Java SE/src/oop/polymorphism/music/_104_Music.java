@@ -12,7 +12,7 @@ public class _104_Music {
 
         _102_Instrument flute2 = new _103_Wind();
         tune(flute2);
-        
+
         _102_Instrument flute3 = new _102_Instrument();
         tune(flute3);
     }

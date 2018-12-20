@@ -32,8 +32,7 @@ enum EnumDemo {
     public void set_b(int _b) {
         this._b = _b;
     }
-    
-    
+
 }
 
 public class _999_Test {
@@ -48,7 +47,7 @@ public class _999_Test {
         default:
             System.out.println("defal");
         }
-        
+
         a.set_a(100);
         System.out.println(a.get_a());
     }

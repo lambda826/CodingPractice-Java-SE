@@ -1,8 +1,7 @@
 package oop.polymorphism.music;
 
-
 public class _107_Music2 {
-    
+
     public static void tune(_103_Wind i) {
         i.play(_101_Note.MIDDLE_C);
     }

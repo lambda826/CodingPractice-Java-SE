@@ -41,10 +41,10 @@ public class _111_Hide {
 }
 
 class _112_Lisa extends Homer {
-    
+
     // @Override
     void doh(Milhouse m) {
         System.out.println("doh(Milhouse)");
     }
-    
+
 }

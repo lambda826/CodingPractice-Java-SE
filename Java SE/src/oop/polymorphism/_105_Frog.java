@@ -3,7 +3,7 @@ package oop.polymorphism;
 import static utils.Print.*;
 
 class Characteristic {
-    
+
     private String s;
 
     Characteristic(String s) {
@@ -14,11 +14,11 @@ class Characteristic {
     protected void dispose() {
         print("disposing Characteristic " + s);
     }
-    
+
 }
 
 class Description {
-    
+
     private String s;
 
     Description(String s) {
@@ -29,11 +29,11 @@ class Description {
     protected void dispose() {
         print("disposing Description " + s);
     }
-    
+
 }
 
 class LivingCreature {
-    
+
     private Characteristic p = new Characteristic("is alive");
     private Description t = new Description("Basic Living Creature");
 
@@ -46,11 +46,11 @@ class LivingCreature {
         t.dispose();
         p.dispose();
     }
-    
+
 }
 
 class Animal extends LivingCreature {
-    
+
     private Characteristic p = new Characteristic("has heart");
     private Description t = new Description("Animal not Vegetable");
 
@@ -64,11 +64,11 @@ class Animal extends LivingCreature {
         p.dispose();
         super.dispose();
     }
-    
+
 }
 
 class Amphibian extends Animal {
-    
+
     private Characteristic p = new Characteristic("can live in water");
     private Description t = new Description("Both water and land");
 
@@ -82,11 +82,11 @@ class Amphibian extends Animal {
         p.dispose();
         super.dispose();
     }
-    
+
 }
 
 public class _105_Frog extends Amphibian {
-    
+
     private Characteristic p = new Characteristic("Croaks");
     private Description t = new Description("Eats Bugs");
 
@@ -106,5 +106,5 @@ public class _105_Frog extends Amphibian {
         print("Bye!");
         frog.dispose();
     }
-    
+
 }

@@ -3,7 +3,7 @@ package operators;
 import static utils.Print.*;
 
 public class _106_RoundingNumbers {
-    
+
     public static void main(String[] args) {
         double above = 0.7, below = 0.4;
         float fabove = 0.7f, fbelow = 0.4f;
@@ -12,5 +12,5 @@ public class _106_RoundingNumbers {
         print("Math.round(fabove): " + Math.round(fabove));
         print("Math.round(fbelow): " + Math.round(fbelow));
     }
-    
-} 
+
+}

@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 class MyComp implements Comparator<String> {
-    
+
     public int compare(String aStr, String bStr) {
         // Reverse the comparison. 
         return bStr.compareTo(aStr);

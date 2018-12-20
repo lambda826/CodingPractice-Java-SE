@@ -1,14 +1,14 @@
 package oop.inheritance;
 
 class Gizmo {
-    
+
     public void spin() {
     }
-    
+
 }
 
 public class _117_FinalArguments {
-    
+
     void with(final Gizmo g) {
         // Illegal -- g is final
         //! g = new Gizmo();
@@ -29,5 +29,5 @@ public class _117_FinalArguments {
         bf.without(null);
         bf.with(null);
     }
-    
+
 }

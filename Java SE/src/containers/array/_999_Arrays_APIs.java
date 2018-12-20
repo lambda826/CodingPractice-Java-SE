@@ -28,7 +28,7 @@ public class _999_Arrays_APIs {
         //        copy = Arrays.copyOfRange(original, -1, 9);
 
         System.out.println();
-        
+
         // static void fill(int[] a, int from, int to, int val), toIndex不能超出数组长度
         System.out.println("-----------  static void fill(int[] a, int from, int to, int val)");
         original = new int[5];

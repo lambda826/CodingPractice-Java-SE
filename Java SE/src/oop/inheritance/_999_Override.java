@@ -31,5 +31,5 @@ class B extends A {
     Sub get() {
         return new Sub();
     }
-    
-} 
+
+}

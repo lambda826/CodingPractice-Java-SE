@@ -1,7 +1,7 @@
 package oop.inheritance;
 
 class Engine {
-    
+
     public void start() {
     }
 
@@ -10,28 +10,28 @@ class Engine {
 
     public void stop() {
     }
-    
+
 }
 
 class Wheel {
-    
+
     public void inflate(int psi) {
     }
-    
+
 }
 
 class Window {
-    
+
     public void rollup() {
     }
 
     public void rolldown() {
     }
-    
+
 }
 
 class Door {
-    
+
     public Window window = new Window();
 
     public void open() {
@@ -39,7 +39,7 @@ class Door {
 
     public void close() {
     }
-    
+
 }
 
 public class _112_Car {
@@ -62,5 +62,5 @@ public class _112_Car {
         car.left.window.rollup();
         car.wheel[0].inflate(72);
     }
-    
+
 }

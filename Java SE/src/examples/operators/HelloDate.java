@@ -1,13 +1,14 @@
+
 //: operators/HelloDate.java
 import java.util.*;
 import static utils.Print.*;
 
 public class HelloDate {
-  public static void main(String[] args) {
-    print("Hello, it's: ");
-    print(new Date());
-  }
+    public static void main(String[] args) {
+        print("Hello, it's: ");
+        print(new Date());
+    }
 } /* Output: (55% match)
-Hello, it's:
-Wed Oct 05 14:39:05 MDT 2005
-*///:~
+  Hello, it's:
+  Wed Oct 05 14:39:05 MDT 2005
+  *///:~

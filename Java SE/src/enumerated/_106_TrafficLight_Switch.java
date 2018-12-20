@@ -7,7 +7,7 @@ enum Signal {
 }
 
 public class _106_TrafficLight_Switch {
-    
+
     Signal color = Signal.RED;
 
     public void change() {

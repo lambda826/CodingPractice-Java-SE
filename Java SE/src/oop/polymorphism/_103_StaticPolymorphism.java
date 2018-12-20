@@ -1,7 +1,7 @@
 package oop.polymorphism;
 
 class StaticSuper {
-    
+
     public static String staticGet() {
         return "Base staticGet()";
     }
@@ -9,11 +9,11 @@ class StaticSuper {
     public String dynamicGet() {
         return "Base dynamicGet()";
     }
-    
+
 }
 
 class StaticSub extends StaticSuper {
-    
+
     public static String staticGet() {
         return "Derived staticGet()";
     }
@@ -21,7 +21,7 @@ class StaticSub extends StaticSuper {
     public String dynamicGet() {
         return "Derived dynamicGet()";
     }
-    
+
 }
 
 public class _103_StaticPolymorphism {
@@ -30,4 +30,4 @@ public class _103_StaticPolymorphism {
         System.out.println(sup.staticGet());
         System.out.println(sup.dynamicGet());
     }
-} 
+}

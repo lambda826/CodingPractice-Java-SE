@@ -1,7 +1,7 @@
 package enumerated;
 
 public class _109_NonEnum {
-    
+
     public static void main(String[] args) {
         Class<Integer> intClass = Integer.class;
         try {

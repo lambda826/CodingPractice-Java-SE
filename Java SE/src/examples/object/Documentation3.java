@@ -7,5 +7,6 @@
 * <li> Item three
 * </ol>
 */
-public class Documentation3 {}
+public class Documentation3 {
+}
 ///:~

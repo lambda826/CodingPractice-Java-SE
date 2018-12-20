@@ -28,11 +28,12 @@ public class _998_Implementation implements Interface {
     //     void B() {
     //    }
 }
-    
+
 abstract class AAA {
-    
+
     abstract public void methodA();
+
     private static void method() {
     }
-    
+
 }

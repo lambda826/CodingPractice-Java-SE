@@ -3,7 +3,7 @@ package oop.polymorphism;
 import static utils.Print.*;
 
 class Shared {
-    
+
     private int refcount = 0;
     private static long counter = 0;
     private final long id = counter++;
@@ -29,7 +29,7 @@ class Shared {
 }
 
 class Composing {
-    
+
     private Shared shared;
     private static long counter = 0;
     private final long id = counter++;
@@ -51,7 +51,7 @@ class Composing {
 }
 
 public class _106_ReferenceCounting {
-    
+
     public static void main(String[] args) {
         Shared shared = new Shared();
         Composing[] composing = { new Composing(shared), new Composing(shared), new Composing(shared), new Composing(shared), new Composing(shared) };
@@ -59,5 +59,5 @@ public class _106_ReferenceCounting {
             c.dispose();
         }
     }
-    
+
 }

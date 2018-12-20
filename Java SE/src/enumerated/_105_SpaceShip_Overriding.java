@@ -1,9 +1,9 @@
 package enumerated;
 
 public enum _105_SpaceShip_Overriding {
-    
+
     SCOUT, CARGO, TRANSPORT, CRUISER, BATTLESHIP, MOTHERSHIP;
-    
+
     @Override
     public String toString() {
         String id = name();

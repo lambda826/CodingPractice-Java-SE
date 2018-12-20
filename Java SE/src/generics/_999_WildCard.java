@@ -37,7 +37,7 @@ public class _999_WildCard {
         c2 = list.get(0);
         List<? super C2> list2 = new ArrayList<>();
         list2.add(d1);
-        
+
     }
 }
 

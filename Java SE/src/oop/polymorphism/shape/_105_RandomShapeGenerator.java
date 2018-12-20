@@ -3,7 +3,7 @@ package oop.polymorphism.shape;
 import java.util.*;
 
 public class _105_RandomShapeGenerator {
-    
+
     private Random rand = new Random(47);
 
     public _101_Shape next() {
@@ -17,5 +17,5 @@ public class _105_RandomShapeGenerator {
             return new _104_Triangle();
         }
     }
-    
+
 }
