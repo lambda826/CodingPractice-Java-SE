@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import common.obj.coffee.Coffee;
 import generics._110_CoffeeGenerator;
 
-public class _105_ArrayListDisplay {
+public class _05_ArrayListDisplay {
 
     public static void main(String[] args) {
         ArrayList<Coffee> coffees = new ArrayList<Coffee>();

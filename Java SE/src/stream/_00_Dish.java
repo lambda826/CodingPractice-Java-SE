@@ -1,4 +1,4 @@
-package modernjavainaction.chap06;
+package stream;
 
 import static java.util.Arrays.asList;
 
@@ -6,14 +6,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Dish {
+public class _00_Dish {
 
   private final String name;
   private final boolean vegetarian;
   private final int calories;
   private final Type type;
 
-  public Dish(String name, boolean vegetarian, int calories, Type type) {
+  public _00_Dish(String name, boolean vegetarian, int calories, Type type) {
     this.name = name;
     this.vegetarian = vegetarian;
     this.calories = calories;
@@ -47,16 +47,16 @@ public class Dish {
     OTHER
   }
 
-  public static final List<Dish> menu = asList(
-      new Dish("pork", false, 800, Dish.Type.MEAT),
-      new Dish("beef", false, 700, Dish.Type.MEAT),
-      new Dish("chicken", false, 400, Dish.Type.MEAT),
-      new Dish("french fries", true, 530, Dish.Type.OTHER),
-      new Dish("rice", true, 350, Dish.Type.OTHER),
-      new Dish("season fruit", true, 120, Dish.Type.OTHER),
-      new Dish("pizza", true, 550, Dish.Type.OTHER),
-      new Dish("prawns", false, 400, Dish.Type.FISH),
-      new Dish("salmon", false, 450, Dish.Type.FISH)
+  public static final List<_00_Dish> menu = asList(
+      new _00_Dish("pork", false, 800, _00_Dish.Type.MEAT),
+      new _00_Dish("beef", false, 700, _00_Dish.Type.MEAT),
+      new _00_Dish("chicken", false, 400, _00_Dish.Type.MEAT),
+      new _00_Dish("french fries", true, 530, _00_Dish.Type.OTHER),
+      new _00_Dish("rice", true, 350, _00_Dish.Type.OTHER),
+      new _00_Dish("season fruit", true, 120, _00_Dish.Type.OTHER),
+      new _00_Dish("pizza", true, 550, _00_Dish.Type.OTHER),
+      new _00_Dish("prawns", false, 400, _00_Dish.Type.FISH),
+      new _00_Dish("salmon", false, 450, _00_Dish.Type.FISH)
   );
 
   public static final Map<String, List<String>> dishTags = new HashMap<>();

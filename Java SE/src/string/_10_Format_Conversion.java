@@ -3,7 +3,7 @@ package string;
 import java.math.BigInteger;
 import java.util.Formatter;
 
-public class _110_Conversion {
+public class _10_Format_Conversion {
 
     @SuppressWarnings("resource")
     public static void main(String[] args) {
@@ -53,7 +53,7 @@ public class _110_Conversion {
         // f.format("x: %x\n", x);
         f.format("h: %h\n", x);
 
-        _110_Conversion y = new _110_Conversion();
+        _10_Format_Conversion y = new _10_Format_Conversion();
         System.out.println("y = new Conversion()");
         // f.format("d: %d\n", y);
         // f.format("c: %c\n", y);

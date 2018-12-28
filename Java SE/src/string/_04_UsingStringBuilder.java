@@ -2,7 +2,7 @@ package string;
 
 import java.util.*;
 
-public class _104_UsingStringBuilder {
+public class _04_UsingStringBuilder {
 
     public static Random rand = new Random(47);
 
@@ -19,7 +19,7 @@ public class _104_UsingStringBuilder {
     }
 
     public static void main(String[] args) {
-        _104_UsingStringBuilder usb = new _104_UsingStringBuilder();
+        _04_UsingStringBuilder usb = new _04_UsingStringBuilder();
         System.out.println(usb);
     }
 

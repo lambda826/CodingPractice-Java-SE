@@ -1,6 +1,6 @@
 package string;
 
-public class _107_SimpleFormat {
+public class _07_Format_SimpleFormat {
 
     public static void main(String[] args) {
         int x = 5;

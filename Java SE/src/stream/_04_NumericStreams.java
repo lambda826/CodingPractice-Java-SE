@@ -1,6 +1,6 @@
 package stream;
 
-import static stream.Dish.menu;
+import static stream._00_Dish.menu;
 
 import java.util.Arrays;
 import java.util.OptionalInt;
@@ -12,13 +12,13 @@ public class _04_NumericStreams {
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        System.out.println("Number of calories:" + menu.stream().mapToInt(Dish::getCalories).sum());
-        menu.stream().mapToInt(Dish::getCalories).boxed();
+        System.out.println("Number of calories:" + menu.stream().mapToInt(_00_Dish::getCalories).sum());
+        menu.stream().mapToInt(_00_Dish::getCalories).boxed();
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // max and OptionalInt
-        OptionalInt maxCalories = menu.stream().mapToInt(Dish::getCalories).max();
+        OptionalInt maxCalories = menu.stream().mapToInt(_00_Dish::getCalories).max();
         int max;
         if (maxCalories.isPresent()) {
             max = maxCalories.getAsInt();
@@ -31,9 +31,10 @@ public class _04_NumericStreams {
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // numeric ranges
-        System.out.println(IntStream.range(0, 100).filter(n -> n % 2 == 0).count());
-        System.out.println(IntStream.rangeClosed(0, 100).filter(n -> n % 2 == 0).count());
+        System.out.println(IntStream.range(0, 2).filter(n -> n % 2 == 0).count());
+        System.out.println(IntStream.rangeClosed(0, 2).filter(n -> n % 2 == 0).count());
 
+        // Pythagorean triples
         IntStream.rangeClosed(1, 100).boxed().flatMap(a -> IntStream.rangeClosed(a, 100).filter(b -> Math.sqrt(a * a + b * b) % 1 == 0).boxed().map(b -> new int[] { a, b, (int) Math.sqrt(a * a + b * b) }))
                 .forEach(t -> System.out.println(t[0] + ", " + t[1] + ", " + t[2]));
         IntStream.rangeClosed(1, 100).boxed().flatMap(a -> IntStream.rangeClosed(a, 100).mapToObj(b -> new double[] { a, b, Math.sqrt(a * a + b * b) }).filter(t -> t[2] % 1 == 0))

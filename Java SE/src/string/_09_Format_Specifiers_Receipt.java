@@ -2,7 +2,8 @@ package string;
 
 import java.util.*;
 
-public class _109_Receipt {
+// %[argument_index$][flags][width][.precision]conversion
+public class _09_Format_Specifiers_Receipt {
 
     private double total = 0;
     private Formatter f = new Formatter(System.out);
@@ -24,7 +25,7 @@ public class _109_Receipt {
     }
 
     public static void main(String[] args) {
-        _109_Receipt receipt = new _109_Receipt();
+        _09_Format_Specifiers_Receipt receipt = new _09_Format_Specifiers_Receipt();
         receipt.printTitle();
         receipt.print("Jack's Magic Beans", 4, 4.25);
         receipt.print("Princess Peas", 3, 5.1);

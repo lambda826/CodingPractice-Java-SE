@@ -4,7 +4,7 @@ import java.io.*;
 
 import utils.BinaryFile;
 
-public class _112_Hex {
+public class _12_Format_Hex {
 
     public static String format(byte[] data) {
         StringBuilder result = new StringBuilder();
