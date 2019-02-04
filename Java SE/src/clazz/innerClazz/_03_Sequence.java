@@ -1,5 +1,4 @@
 package clazz.innerClazz;
-// Holds a sequence of Objects.
 
 interface Selector {
     boolean end();
@@ -9,11 +8,11 @@ interface Selector {
     void next();
 }
 
-public class Sequence {
+public class _03_Sequence {
     private Object[] items;
     private int next = 0;
 
-    public Sequence(int size) {
+    public _03_Sequence(int size) {
         items = new Object[size];
     }
 
@@ -34,8 +33,9 @@ public class Sequence {
         }
 
         public void next() {
-            if (i < items.length)
+            if (i < items.length) {
                 i++;
+            }
         }
     }
 
@@ -44,15 +44,14 @@ public class Sequence {
     }
 
     public static void main(String[] args) {
-        Sequence sequence = new Sequence(10);
-        for (int i = 0; i < 10; i++)
+        _03_Sequence sequence = new _03_Sequence(10);
+        for (int i = 0; i < 10; i++) {
             sequence.add(Integer.toString(i));
+        }
         Selector selector = sequence.selector();
         while (!selector.end()) {
             System.out.print(selector.current() + " ");
             selector.next();
         }
     }
-} /* Output:
-  0 1 2 3 4 5 6 7 8 9
-  *///:~
+}

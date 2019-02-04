@@ -1,7 +1,8 @@
 package clazz.innerClazz;
-// Returning a reference to an inner class.
 
-public class Parcel2 {
+//Returning a reference to an inner class.
+public class _02_Parcel2 {
+    
     class Contents {
         private int i = 11;
 
@@ -37,13 +38,11 @@ public class Parcel2 {
     }
 
     public static void main(String[] args) {
-        Parcel2 p = new Parcel2();
+        _02_Parcel2 p = new _02_Parcel2();
         p.ship("Tasmania");
-        Parcel2 q = new Parcel2();
+        _02_Parcel2 q = new _02_Parcel2();
         // Defining references to inner classes:
-        Parcel2.Contents c = q.contents();
-        Parcel2.Destination d = q.to("Borneo");
+        _02_Parcel2.Contents c = q.contents();
+        _02_Parcel2.Destination d = q.to("Borneo");
     }
-} /* Output:
-  Tasmania
-  *///:~
+}

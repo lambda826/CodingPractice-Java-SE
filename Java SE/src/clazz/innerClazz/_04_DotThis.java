@@ -1,15 +1,16 @@
 package clazz.innerClazz;
-// Qualifying access to the outer-class object.
 
-public class DotThis {
+//Qualifying access to the outer-class object.
+public class _04_DotThis {
     void f() {
         System.out.println("DotThis.f()");
     }
 
     public class Inner {
-        public DotThis outer() {
-            return DotThis.this;
+        public _04_DotThis outer() {
             // A plain "this" would be Inner's "this"
+            return _04_DotThis.this;
+
         }
     }
 
@@ -18,10 +19,8 @@ public class DotThis {
     }
 
     public static void main(String[] args) {
-        DotThis dt = new DotThis();
-        DotThis.Inner dti = dt.inner();
+        _04_DotThis dt = new _04_DotThis();
+        _04_DotThis.Inner dti = dt.inner();
         dti.outer().f();
     }
-} /* Output:
-  DotThis.f()
-  *///:~
+}

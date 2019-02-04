@@ -1,7 +1,7 @@
 package clazz.innerClazz;
-// Creating inner classes.
 
-public class Parcel1 {
+public class _01_Parcel1 {
+
     class Contents {
         private int i = 11;
 
@@ -22,8 +22,7 @@ public class Parcel1 {
         }
     }
 
-    // Using inner classes looks just like
-    // using any other class, within Parcel1:
+    // Using inner classes looks just like using any other class, within Parcel1:
     public void ship(String dest) {
         Contents c = new Contents();
         Destination d = new Destination(dest);
@@ -31,9 +30,7 @@ public class Parcel1 {
     }
 
     public static void main(String[] args) {
-        Parcel1 p = new Parcel1();
+        _01_Parcel1 p = new _01_Parcel1();
         p.ship("Tasmania");
     }
-} /* Output:
-  Tasmania
-  *///:~
+}
