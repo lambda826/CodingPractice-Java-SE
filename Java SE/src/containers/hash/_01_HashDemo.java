@@ -42,8 +42,7 @@ class Class_2 extends Key {
         return name.hashCode();
     }
 
-    // equals() method must strictly determine whether two os are equivalent
-    // if two objects are equal, they have to have the same hashCode
+    // equals() method must strictly determine whether two os are equivalent if two objects are equal, they have to have the same hashCode
     @Override
     public boolean equals(Object o) {
         return o instanceof Class_2 && ((Class_2) o).name.equals(name);

@@ -5,6 +5,8 @@
 
 package oop;
 
+// Composition is again a specialized form of Aggregation and we can call this as a “death” relationship. It is a strong type of Aggregation. 
+// Child objects does not have their life cycle and if the parent object is deleted all child objects will also be deleted.
 public class Computer_Composition_ConstructorField {
 
     private String cpu;

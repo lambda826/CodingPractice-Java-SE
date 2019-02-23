@@ -1,10 +1,12 @@
 /**
- *  @author: Yunxiang He
- *  @date  : 2018-10-21
+ *  @author Yunxiang He
+ *  @date   10/21/2018
  */
 
 package oop;
 
+// Association is relation between two separate classes which establishes through their Objects. 
+// Association can be one-to-one, one-to-many, many-to-one, many-to-many.
 public class Computer_Association_Setter {
 
     private String cpu;
