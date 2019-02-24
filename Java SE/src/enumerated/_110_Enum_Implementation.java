@@ -2,7 +2,7 @@ package enumerated;
 
 import java.util.Random;
 
-import examples.net.mindview.util.Generator;
+import sun.rmi.rmic.Generator;
 
 enum CartoonCharacter implements Generator<CartoonCharacter> {
     SLAPPY, SPANKY, PUNCHY, SILLY, BOUNCY, NUTTY, BOB;
