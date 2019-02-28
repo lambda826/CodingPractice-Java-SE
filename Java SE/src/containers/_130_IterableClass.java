@@ -3,29 +3,31 @@ package containers;
 import java.util.*;
 
 public class _130_IterableClass implements Iterable<String> {
-    protected String[] words = ("And that is how " + "we know the Earth to be banana-shaped.").split(" ");
+	protected String[] words = ("And that is how " + "we know the Earth to be banana-shaped.").split(" ");
 
-    public Iterator<String> iterator() {
-        return new Iterator<String>() {
-            private int index = 0;
+	public static void main(String[] args) {
+		for (String s : new _130_IterableClass()) {
+			System.out.print(s + " ");
+		}
+	}
 
-            public boolean hasNext() {
-                return index < words.length;
-            }
+	@Override
+	public Iterator<String> iterator() {
+		return new Iterator<String>() {
+			private int index = 0;
 
-            public String next() {
-                return words[index++];
-            }
+			public boolean hasNext() {
+				return index < words.length;
+			}
 
-            public void remove() {
-                throw new UnsupportedOperationException();
-            }
-        };
-    }
+			public String next() {
+				return words[index++];
+			}
 
-    public static void main(String[] args) {
-        for (String s : new _130_IterableClass()) {
-            System.out.print(s + " ");
-        }
-    }
+			public void remove() {
+				throw new UnsupportedOperationException();
+			}
+		};
+	}
+
 }
