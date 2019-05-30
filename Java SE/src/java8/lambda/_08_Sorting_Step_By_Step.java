@@ -7,8 +7,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-import java8.lambda._0212_01_Behavior_Parameterization.Apple;
-import java8.lambda._0212_01_Behavior_Parameterization.Color;
+import java8.lambda._01_Behavior_Parameterization.Apple;
+import java8.lambda._01_Behavior_Parameterization.Color;
 
 public class _08_Sorting_Step_By_Step {
 

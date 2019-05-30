@@ -10,10 +10,10 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import java8.lambda._0212_01_Behavior_Parameterization.Apple;
-import java8.lambda._0212_01_Behavior_Parameterization.Color;
-import java8.lambda._0212_01_Behavior_Parameterization.Fruit;
-import java8.lambda._0212_01_Behavior_Parameterization.Orange;
+import java8.lambda._01_Behavior_Parameterization.Apple;
+import java8.lambda._01_Behavior_Parameterization.Color;
+import java8.lambda._01_Behavior_Parameterization.Fruit;
+import java8.lambda._01_Behavior_Parameterization.Orange;
 
 public class _09_Constructor_Reference {
 

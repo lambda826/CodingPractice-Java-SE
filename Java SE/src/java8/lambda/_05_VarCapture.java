@@ -11,10 +11,10 @@ public class _05_VarCapture {
         MyFunc myLambda = (n) -> {
             // OK
             int v = num + n;
-            //      num++; 
+            // num++; 
             return v;
         };
-        //  num = 9; 
+        // num = 9; 
     }
 
 }

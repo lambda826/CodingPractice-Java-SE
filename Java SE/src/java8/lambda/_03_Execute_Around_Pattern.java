@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class _0212_03_Execute_Around_Pattern {
+public class _03_Execute_Around_Pattern {
 
     static String path = "D:/01__Development/Coding Practice/Java SE/Java SE/src/lambda/data.txt";
 

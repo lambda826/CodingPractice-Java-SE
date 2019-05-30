@@ -4,7 +4,7 @@ interface ThisMethod {
     void apply(int i);
 }
 
-public class _0212_02_Meaning_of_This {
+public class _02_Meaning_of_This {
 
     public final int value = 4;
     int i = 0;
@@ -16,9 +16,7 @@ public class _0212_02_Meaning_of_This {
 
             public void run() {
                 int value = 10;
-                // this referes to r,
-                // this.value referes to 5
-                System.out.println(this.value);
+                System.out.println(this.value); // this referes to r, this.value referes to 5
             }
         };
         r.run();
@@ -31,7 +29,7 @@ public class _0212_02_Meaning_of_This {
     }
 
     public static void main(String... args) {
-        _0212_02_Meaning_of_This instance = new _0212_02_Meaning_of_This();
+        _02_Meaning_of_This instance = new _02_Meaning_of_This();
         instance.doIt();
         instance.method().apply(2);
         System.out.println(instance.i);

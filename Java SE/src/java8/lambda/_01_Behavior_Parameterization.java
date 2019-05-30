@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class _0212_01_Behavior_Parameterization<T> {
+public class _01_Behavior_Parameterization<T> {
 
     static enum Color {
         RED, GREEN
@@ -210,7 +210,7 @@ public class _0212_01_Behavior_Parameterization<T> {
         System.out.println(filter(inventory, (Apple apple) -> apple.getColor().equals(Color.RED)));
 
         // Generic type
-        _0212_01_Behavior_Parameterization<Integer> instance = new _0212_01_Behavior_Parameterization<>();
+        _01_Behavior_Parameterization<Integer> instance = new _01_Behavior_Parameterization<>();
         System.out.println(instance.filter2(Arrays.asList(new Integer[] { 1, 3, 6, 8 }), (Integer i) -> i % 2 == 0));
 
         // Sorting with a comparator
