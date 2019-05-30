@@ -3,7 +3,7 @@
  *  @date    Feb 14, 2018 1:48:16 AM
  */
 
-package lambda;
+package java8.lambda;
 
 interface MyFunc4 {
     MyClass4 func(int n);

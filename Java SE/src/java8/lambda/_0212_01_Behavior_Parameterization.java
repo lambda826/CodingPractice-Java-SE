@@ -1,4 +1,4 @@
-package lambda;
+package java8.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class _01_Behavior_Parameterization<T> {
+public class _0212_01_Behavior_Parameterization<T> {
 
     static enum Color {
         RED, GREEN
@@ -166,7 +166,7 @@ public class _01_Behavior_Parameterization<T> {
         return result;
     }
 
-    // Practice
+    // Practice, print apples
     public interface AppleFormatter {
         String accept(Apple a);
     }
@@ -210,7 +210,7 @@ public class _01_Behavior_Parameterization<T> {
         System.out.println(filter(inventory, (Apple apple) -> apple.getColor().equals(Color.RED)));
 
         // Generic type
-        _01_Behavior_Parameterization<Integer> instance = new _01_Behavior_Parameterization<>();
+        _0212_01_Behavior_Parameterization<Integer> instance = new _0212_01_Behavior_Parameterization<>();
         System.out.println(instance.filter2(Arrays.asList(new Integer[] { 1, 3, 6, 8 }), (Integer i) -> i % 2 == 0));
 
         // Sorting with a comparator
@@ -230,7 +230,7 @@ public class _01_Behavior_Parameterization<T> {
         t = new Thread(() -> System.out.println("Hello world"));
         t.run();
 
-        // Returing a result using Callable
+        // Returning a result using Callable
         ExecutorService executorService = Executors.newCachedThreadPool();
         Future<String> threadName = executorService.submit(new Callable<String>() {
             public String call() throws Exception {

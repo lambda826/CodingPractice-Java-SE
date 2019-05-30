@@ -1,10 +1,10 @@
-package lambda;
+package java8.lambda;
 
 interface ThisMethod {
     void apply(int i);
 }
 
-public class _02_Meaning_of_This {
+public class _0212_02_Meaning_of_This {
 
     public final int value = 4;
     int i = 0;
@@ -31,7 +31,7 @@ public class _02_Meaning_of_This {
     }
 
     public static void main(String... args) {
-        _02_Meaning_of_This instance = new _02_Meaning_of_This();
+        _0212_02_Meaning_of_This instance = new _0212_02_Meaning_of_This();
         instance.doIt();
         instance.method().apply(2);
         System.out.println(instance.i);

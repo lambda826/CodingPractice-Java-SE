@@ -3,7 +3,7 @@
  *  @date  : 2018-03-14 17:29
  */
 
-package lambda;
+package java8.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;

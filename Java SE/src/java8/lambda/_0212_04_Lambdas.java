@@ -1,13 +1,13 @@
-package lambda;
+package java8.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import lambda._01_Behavior_Parameterization.Apple;
-import lambda._01_Behavior_Parameterization.Color;
+import java8.lambda._0212_01_Behavior_Parameterization.Apple;
+import java8.lambda._0212_01_Behavior_Parameterization.Color;
 
-public class _04_Lambdas {
+public class _0212_04_Lambdas {
 
     interface ApplePredicate {
         public boolean test(Apple a);

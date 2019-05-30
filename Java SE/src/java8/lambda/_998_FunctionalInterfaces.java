@@ -3,7 +3,7 @@
  *  @date  : 2018-05-02 08:45
  */
 
-package lambda;
+package java8.lambda;
 
 import java.io.BufferedReader;
 import java.io.IOException;

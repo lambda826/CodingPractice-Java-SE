@@ -1,0 +1,20 @@
+The provisions of the compareTo contract
+	* The first provision says that
+	    * if you reverse the direction of a comparison between two object references, the expected thing happens:
+		    * if the first object is less than the second, then the second must be greater than the first
+		    * if the first object is equal to the second, then the second must be equal to the first
+		    * if the first object is greater than the second, then the second must be less than the first
+	* The second provision says that
+	    * if one object is greater than a second and the second is greater than a third, then the first must be greater than the third
+	* The final provision says that
+	    * all objects that compare as equal must yield the same results when compared to any other object
+	* One consequence of these three provisions is that 
+	    * the equality test imposed by a compareTo method must obey the same restrictions imposed by the equals contract:
+	        * reflexivity
+	        * symmetry
+	        * transitivity
+
+In summary
+	* whenever you implement a value class that has a sensible ordering, you should have the class implement the Comparable interface so that its instances can be easily sorted, searched, and used in comparison-based collections
+	* When comparing field values in the implementations of the compareTo methods, avoid the use of the < and > operators
+	* Instead, use the static compare methods in the boxed primitive classes or the comparator construction methods in the Comparator interface

@@ -3,7 +3,7 @@
  *    @date 11/22/2018
  */
 
-package lambda;
+package java8.lambda;
 
 import java.util.Comparator;
 import java.util.Map;

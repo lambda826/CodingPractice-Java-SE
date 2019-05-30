@@ -3,7 +3,7 @@
  *  @date    Feb 14, 2018 1:51:15 AM
  */
 
-package lambda;
+package java8.lambda;
 
 interface MyFunc7<R, T> {
     R func(T n);

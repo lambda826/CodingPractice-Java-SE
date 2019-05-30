@@ -1,4 +1,4 @@
-package lambda;
+package java8.lambda;
 
 public class _06_Method_Reference {
 

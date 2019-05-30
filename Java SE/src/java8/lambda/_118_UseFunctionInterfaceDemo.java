@@ -3,7 +3,7 @@
  *  @date    Feb 14, 2018 1:52:16 AM
  */
 
-package lambda;
+package java8.lambda;
 
 import java.util.function.Function;
 
