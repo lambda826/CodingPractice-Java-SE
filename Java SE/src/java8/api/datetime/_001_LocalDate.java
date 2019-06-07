@@ -1,14 +1,6 @@
-/**
- *  @author Yunxiang He
- *  @date   04/17/2019
- */
-
 package java8.api.datetime;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.Month;
-
+import static utils.Print.print;
 /*
 
 Immutable
@@ -17,32 +9,60 @@ Doesn't carry any information about the time zone
 
 */
 
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
+import java.time.temporal.ChronoField;
+
 public class _001_LocalDate {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        LocalDate today = LocalDate.now();
-        LocalDate date = LocalDate.of(2017, 9, 21); // create an instance by using the of static factory method
-        int year = date.getYear();
-        Month month = date.getMonth();
-        int day = date.getDayOfMonth();
-        DayOfWeek dow = date.getDayOfWeek();
-        int len = date.lengthOfMonth();
-        boolean leap = date.isLeapYear();
-        
+		print("Use LocaDate ======");
+		// Obtain the current date from the system clock
+		LocalDate today = LocalDate.now();
+		print(today);
+		// Create an instance by using the of static factory method
+		LocalDate date = LocalDate.of(2017, 9, 21);
+		print(date);
+		print("      Year: " + date.getYear());
+		print("     Month: " + date.getMonth());
+		print("     Month: " + date.getMonthValue());
+		print("   Day of Month: " + date.getDayOfMonth());
+		print("    Day of Week: " + date.getDayOfWeek());
+		print("Length of Month: " + date.lengthOfMonth());
+		print("    Is Leapyear: " + date.isLeapYear());
+		print();
+		print("      Year: " + date.get(ChronoField.YEAR));
+		print("     Month: " + date.get(ChronoField.MONTH_OF_YEAR));
+		print("   Day of Month: " + date.get(ChronoField.DAY_OF_MONTH));
+		print();
 
-        System.out.println(today);
-        System.out.println(year);
-        System.out.println(month);
-        System.out.println(day);
-        System.out.println(dow);
-        System.out.println(len);
-        System.out.println(leap);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-    }
+		print("Use LocalTime ======");
+		LocalTime time = LocalTime.of(13, 45, 20); // 13:45:20
+		print(time);
+		print("                             Hour: " + time.getHour());
+		print("    Minute: " + time.getMinute());
+		print("    Second: " + time.getSecond());
+		print();
+
+		print("Use LocalDateTime ======");
+		LocalDateTime dt1 = LocalDateTime.of(2014, Month.MARCH, 18, 13, 45, 20);
+		LocalDateTime dt2 = LocalDateTime.of(date, time);
+		LocalDateTime dt3 = date.atTime(13, 45, 20);
+		LocalDateTime dt4 = date.atTime(time);
+		LocalDateTime dt5 = time.atDate(date);
+		LocalDate date1 = dt1.toLocalDate();
+		LocalTime time1 = dt1.toLocalTime();
+		print();
+
+		print("Use instant ======");
+		Instant instant = Instant.ofEpochSecond(44 * 365 * 86400);
+		Instant now = Instant.now();
+		print();
+
+	}
+
 }
