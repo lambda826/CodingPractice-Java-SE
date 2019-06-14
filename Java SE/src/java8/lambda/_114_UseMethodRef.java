@@ -1,8 +1,3 @@
-/**
- *  @author  Yunxiang He
- *  @date    Feb 14, 2018 1:47:37 AM
- */
-
 package java8.lambda;
 
 import java.util.ArrayList;

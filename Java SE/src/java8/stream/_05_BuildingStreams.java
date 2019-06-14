@@ -1,4 +1,4 @@
-package stream;
+package java8.stream;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -20,7 +20,7 @@ public class _05_BuildingStreams {
         Stream<String> emptyStream = Stream.empty();
 
         // Arrays.stream
-        System.out.println(Arrays.stream(new int[] { 2, 3, 5, 7, 11, 13 }).sum());
+        Arrays.stream(new int[] { 2, 3, 5, 7, 11, 13 }).sum();
 
         // Files.lines
         long uniqueWords = 0;

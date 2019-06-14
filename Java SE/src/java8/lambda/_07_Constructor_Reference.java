@@ -1,4 +1,3 @@
-
 package java8.lambda;
 
 import java.util.ArrayList;
@@ -10,12 +9,12 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import java8.lambda._01_Behavior_Parameterization.Apple;
-import java8.lambda._01_Behavior_Parameterization.Color;
-import java8.lambda._01_Behavior_Parameterization.Fruit;
-import java8.lambda._01_Behavior_Parameterization.Orange;
+import java8.lambda.pojos.Apple;
+import java8.lambda.pojos.Color;
+import java8.lambda.pojos.Fruit;
+import java8.lambda.pojos.Orange;
 
-public class _09_Constructor_Reference {
+public class _07_Constructor_Reference {
 
     static Map<String, Function<Integer, Fruit>> map = new HashMap<>();
     static {

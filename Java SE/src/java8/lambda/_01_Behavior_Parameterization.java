@@ -9,62 +9,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import java8.lambda.pojos.Apple;
+import java8.lambda.pojos.Color;
+
 public class _01_Behavior_Parameterization<T> {
 
-    static enum Color {
-        RED, GREEN
-    }
-
-    public static class Fruit {
-
-    }
-
-    public static class Orange extends Fruit {
-        public Orange(int weight) {
-        }
-    }
-
-    public static class Apple extends Fruit {
-        private int weight = 0;
-        private Color color;
-
-        public Apple() {
-        }
-
-        public Apple(int weight) {
-            this.weight = weight;
-        }
-
-        public Apple(int weight, Color color) {
-            this.weight = weight;
-            this.color = color;
-        }
-
-        public Integer getWeight() {
-            return weight;
-        }
-
-        public void setWeight(Integer weight) {
-            this.weight = weight;
-        }
-
-        public Color getColor() {
-            return color;
-        }
-
-        public void setColor(Color color) {
-            this.color = color;
-        }
-
-        public String toString() {
-            return "Apple{" + "color='" + color + '\'' + ", weight=" + weight + '}';
-        }
-    }
-
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Ugly approaches
-    // Filter green apples, before Java 8
+    // Ugly approaches, before Java 8
+    // Filter green apples
     public static List<Apple> filterGreenApples(List<Apple> inventory) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {

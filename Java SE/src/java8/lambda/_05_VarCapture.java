@@ -7,7 +7,7 @@ interface MyFunc {
 public class _05_VarCapture {
 
     public static void main(String args[]) {
-        int num = 10;
+        int num = 10; // effectively final
         MyFunc myLambda = (n) -> {
             // OK
             int v = num + n;

@@ -1,8 +1,3 @@
-/**
- *  @author  Yunxiang He
- *  @date    Feb 14, 2018 1:46:55 AM
- */
-
 package java8.lambda;
 
 interface MyFunc3<T> {

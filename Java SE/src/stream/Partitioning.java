@@ -5,11 +5,13 @@ import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.maxBy;
 import static java.util.stream.Collectors.partitioningBy;
-import static stream._00_Dish.menu;
+import static java8.stream.pojo.Dish.menu;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+
+import java8.stream.pojo.Dish;
 
 public class Partitioning {
 
@@ -19,19 +21,19 @@ public class Partitioning {
     System.out.println("Most caloric dishes by vegetarian: " + mostCaloricPartitionedByVegetarian());
   }
 
-  private static Map<Boolean, List<_00_Dish>> partitionByVegeterian() {
-    return menu.stream().collect(partitioningBy(_00_Dish::isVegetarian));
+  private static Map<Boolean, List<Dish>> partitionByVegeterian() {
+    return menu.stream().collect(partitioningBy(Dish::isVegetarian));
   }
 
-  private static Map<Boolean, Map<_00_Dish.Type, List<_00_Dish>>> vegetarianDishesByType() {
-    return menu.stream().collect(partitioningBy(_00_Dish::isVegetarian, groupingBy(_00_Dish::getType)));
+  private static Map<Boolean, Map<Dish.Type, List<Dish>>> vegetarianDishesByType() {
+    return menu.stream().collect(partitioningBy(Dish::isVegetarian, groupingBy(Dish::getType)));
   }
 
   private static Object mostCaloricPartitionedByVegetarian() {
     return menu.stream().collect(
-        partitioningBy(_00_Dish::isVegetarian,
+        partitioningBy(Dish::isVegetarian,
             collectingAndThen(
-                maxBy(comparingInt(_00_Dish::getCalories)),
+                maxBy(comparingInt(Dish::getCalories)),
                 Optional::get)));
   }
 

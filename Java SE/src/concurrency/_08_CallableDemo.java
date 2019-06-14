@@ -11,6 +11,7 @@ class TaskWithResult implements Callable<String> {
     }
 
     public String call() {
+        System.out.println( "id            " + id);
         return "result of TaskWithResult " + id;
     }
 }
@@ -24,6 +25,8 @@ public class _08_CallableDemo {
         }
         for (Future<String> fs : results)
             try {
+                System.out.println("innnnn");
+
                 // get() blocks until completion:
                 System.out.println(fs.get());
             } catch (InterruptedException e) {
