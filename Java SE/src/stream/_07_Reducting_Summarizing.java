@@ -7,12 +7,12 @@ import static java.util.stream.Collectors.maxBy;
 import static java.util.stream.Collectors.reducing;
 import static java.util.stream.Collectors.summarizingInt;
 import static java.util.stream.Collectors.summingInt;
-import static java8.stream.pojo.Dish.menu;
+import static javaSe.java8.common.pojo.Dish.menu;
 
 import java.util.Comparator;
 import java.util.function.BinaryOperator;
 
-import java8.stream.pojo.Dish;
+import javaSe.java8.common.pojo.Dish;
 
 public class _07_Reducting_Summarizing {
 

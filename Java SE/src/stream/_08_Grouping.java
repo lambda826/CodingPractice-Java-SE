@@ -12,8 +12,8 @@ import static java.util.stream.Collectors.summingInt;
 import static java.util.stream.Collectors.toCollection;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
-import static java8.stream.pojo.Dish.dishTags;
-import static java8.stream.pojo.Dish.menu;
+import static javaSe.java8.common.pojo.Dish.dishTags;
+import static javaSe.java8.common.pojo.Dish.menu;
 
 import java.util.Comparator;
 import java.util.HashSet;
@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-import java8.stream.pojo.Dish;
+import javaSe.java8.common.pojo.Dish;
 
 public class _08_Grouping {
 

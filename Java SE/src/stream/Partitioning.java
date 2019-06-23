@@ -5,13 +5,13 @@ import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.maxBy;
 import static java.util.stream.Collectors.partitioningBy;
-import static java8.stream.pojo.Dish.menu;
+import static javaSe.java8.common.pojo.Dish.menu;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import java8.stream.pojo.Dish;
+import javaSe.java8.common.pojo.Dish;
 
 public class Partitioning {
 

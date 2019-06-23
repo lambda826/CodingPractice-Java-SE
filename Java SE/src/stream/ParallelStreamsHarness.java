@@ -3,6 +3,8 @@ package stream;
 import java.util.concurrent.*;
 import java.util.function.*;
 
+import concurrency.forkJoin.ForkJoinSumCalculator;
+
 public class ParallelStreamsHarness {
 
     public static final ForkJoinPool FORK_JOIN_POOL = new ForkJoinPool();
