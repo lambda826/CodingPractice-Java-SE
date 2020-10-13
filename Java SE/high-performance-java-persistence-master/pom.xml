@@ -352,7 +352,7 @@
         <db-util.version>0.0.1</db-util.version>
         <hibernate-types.version>2.4.0</hibernate-types.version>
 
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <build>
